@@ -5,7 +5,7 @@ __author__ = ["Eszter Iklódi", "Stephan Laschet"]
 import json
 
 
-class CmInterface:
+class CmClient:
     """
     Class that interacts with CM API
     """
