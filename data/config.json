@@ -1,2 +1,7 @@
 {
+  "urls": {
+    "base_url": "https://api.cardmarket.com/ws/v2.0/output.json",
+    "base_url_no_json": "https://api.cardmarket.com/ws/v2.0",
+    "base_url_sandbox": "https://sandbox.cardmarket.com/ws/v2.0"
+  }
 }
