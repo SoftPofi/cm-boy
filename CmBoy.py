@@ -1,6 +1,5 @@
 #!/usr/bin/env python38
 
-__author__ = ["Eszter Iklódi", "Stephan Laschet"]
 
 import json
 
