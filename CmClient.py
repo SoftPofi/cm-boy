@@ -29,28 +29,30 @@ class CmClient:
 
     def get_account_articles(self):
         url_ext = "/users/{}/articles".format(self.confidential_config["account"]["user_name"])
-        self.cm_session.update_client_session_url(url_ext=url_ext)
         return self.cm_session.get_data(url_ext=url_ext)
 
     def get_account_stock(self):
         url_ext = "/stock"
-        self.cm_session.update_client_session_url(url_ext=url_ext)
         return self.cm_session.get_data(url_ext=url_ext)
 
     def get_account_data(self):
         url_ext = "/account"
-        self.cm_session.update_client_session_url(url_ext=url_ext)
         return self.cm_session.get_data(url_ext=url_ext)
 
     def get_card_info(self, product_id):
         url_ext = "/products/{}".format(product_id)
-        self.cm_session.update_client_session_url(url_ext=url_ext)
         return self.cm_session.get_data(url_ext=url_ext)
 
+    def get_card_listing(self, product_id, user_params=None):
+        params = self.config["urls"]["product_default_params"]
+        if user_params is None:
+            params.update(user_params)
+        url_ext = "/articles/{}".format(product_id)
+        return self.cm_session.get_data(url_ext=url_ext, params=params)
 
 if __name__ == "__main__":
     client = CmClient(None)
-    response = client.get_account_stock()
+    response = client.get_card_listing(27)
     if response.status_code == 200 or response.status_code == 206:
         json_object = json.loads(response.text)
         json_formatted_str = json.dumps(json_object, indent=3)
