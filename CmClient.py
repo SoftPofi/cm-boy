@@ -27,13 +27,6 @@ class CmClient:
                 self.config = json.load(json_config)
         with open("./data/confidential_config.json", "r") as json_confidential_config:
             self.confidential_config = json.load(json_confidential_config)
-        realm = "{}/users/{}/articles".format(self.config["urls"]["base_url"],self.confidential_config["account"]["user_name"])
-        self.api_client = OAuth1Session(self.confidential_config["cm_access"]["app_token"],
-                                        client_secret=self.confidential_config["cm_access"]["app_secret"],
-                                        resource_owner_key=self.confidential_config["cm_access"]["access_token"],
-                                        resource_owner_secret=self.confidential_config["cm_access"]["access_secret"],
-                                        realm=realm
-                                        )
 
     def generate_full_url(self, url, url_ext):
         if url is None:
