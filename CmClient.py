@@ -52,6 +52,11 @@ class CmClient:
         return self.cm_session.get_data(url_ext=url_ext, params=params)
 
     def put_card_price(self, card):
+        if "article" not in card or \
+                "idArticle" not in card["article"] or \
+                "price" not in card["article"] or \
+                "count" not in card["article"]:
+            raise ValueError("Dictionary for card malformed or missing entries idArticle, price or count")
         xml_card_description = dicttoxml(card, custom_root='request', attr_type=False)
         return self.cm_session.put_data(url_ext="/stock", body=xml_card_description)
 
