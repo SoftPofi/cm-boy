@@ -18,7 +18,7 @@ class CmSession:
                 url = "{}{}".format(self.base_url, url_ext)
         return url
 
-    def update_client_session_url(self, url=None, url_ext=None, ):
+    def _update_client_session_url(self, url=None, url_ext=None, ):
         url = self.generate_full_url(url, url_ext)
         self.api_client = OAuth1Session(self.confidential_config["cm_access"]["app_token"],
                                         client_secret=self.confidential_config["cm_access"]["app_secret"],
@@ -29,6 +29,7 @@ class CmSession:
 
     def get_data(self, url=None, url_ext=None, params=None):
         url = self.generate_full_url(url, url_ext)
+        self._update_client_session_url(url)
         return self.api_client.get(url, params=params)
 
 
