@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+
 from CmClient import CmClient
 
 
@@ -12,5 +13,6 @@ class CmBoy:
         self.cm_interface = CmClient(self.config)
 
 
+# Todo: delete
 if __name__ == "__main__":
     pass

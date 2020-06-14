@@ -22,9 +22,9 @@ class CmClient:
         if config_data is not None:
             self.config = config_data
         else:
-            with open("./data/config.json", "r") as json_config:
+            with open("../data/config.json", "r") as json_config:
                 self.config = json.load(json_config)
-        with open("./data/confidential_config.json", "r") as json_confidential_config:
+        with open("../data/confidential_config.json", "r") as json_confidential_config:
             self.confidential_config = json.load(json_confidential_config)
         self.cm_session = CmSession(self.config["urls"]["base_url"], self.confidential_config)
 
@@ -61,6 +61,7 @@ class CmClient:
         return self.cm_session.put_data(url_ext="/stock", body=xml_card_description)
 
 
+# Todo: delete
 if __name__ == "__main__":
     example_card = {
         "article":
