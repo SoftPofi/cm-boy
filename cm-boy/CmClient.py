@@ -22,9 +22,9 @@ class CmClient:
         if config_data is not None:
             self.config = config_data
         else:
-            with open("./data/config.json", "r") as json_config:
+            with open("../data/config.json", "r") as json_config:
                 self.config = json.load(json_config)
-        with open("./data/confidential_config.json", "r") as json_confidential_config:
+        with open("../data/confidential_config.json", "r") as json_confidential_config:
             self.confidential_config = json.load(json_confidential_config)
         self.cm_session = CmSession(self.config["urls"]["base_url"], self.confidential_config)
 
@@ -45,8 +45,8 @@ class CmClient:
         return self.cm_session.get_data(url_ext=url_ext)
 
     def get_card_listing(self, product_id, user_params=None):
-        params = self.config["urls"]["product_default_params"]
-        if user_params is None:
+        params = self.config["product_default_params"]
+        if user_params is not None:
             params.update(user_params)
         url_ext = "/articles/{}".format(product_id)
         return self.cm_session.get_data(url_ext=url_ext, params=params)
@@ -59,22 +59,3 @@ class CmClient:
             raise ValueError("Dictionary for card malformed or missing entries idArticle, price or count")
         xml_card_description = dicttoxml(card, custom_root='request', attr_type=False)
         return self.cm_session.put_data(url_ext="/stock", body=xml_card_description)
-
-
-if __name__ == "__main__":
-    example_card = {
-        "article":
-            {
-                "idArticle": "593000831",
-                "count": 1,
-                "price": 0.44,
-            }
-    }
-    client = CmClient(None)
-    response = client.put_card_price(example_card)
-    if response.status_code == 200 or response.status_code == 206:
-        json_object = json.loads(response.text)
-        json_formatted_str = json.dumps(json_object, indent=3)
-        client.logger.debug(json_formatted_str)
-    else:
-        client.logger.error("Faulty response {}".format(response.status_code))

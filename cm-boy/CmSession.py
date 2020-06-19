@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from requests_oauthlib import OAuth1Session, OAuth1
+from requests_oauthlib import OAuth1Session
 
 
 class CmSession:
