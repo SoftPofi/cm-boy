@@ -8,5 +8,8 @@
     "start": 0,
     "maxResults": 25,
     "minUserScore": 1
+  },
+  "listing_static_filter": {
+    "seller_country": "D"
   }
 }

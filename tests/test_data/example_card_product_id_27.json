@@ -1,0 +1,30 @@
+{
+  "idArticle": 593000901,
+  "idProduct": 27,
+  "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+  },
+  "comments": "",
+  "price": 0.04,
+  "count": 1,
+  "inShoppingCart": false,
+  "priceEUR": 0.04,
+  "priceGBP": 0.04,
+  "product": {
+    "idGame": 1,
+    "enName": "Taj-Nar Swordsmith",
+    "locName": "Schwertschmied des Taj-Nar",
+    "image": "//static.cardmarket.com/img/6058ee20479ba5c80d41447a9b1625fc/items/1/MRD/27.jpg",
+    "expansion": "Mirrodin",
+    "nr": "27",
+    "expIcon": 43,
+    "rarity": "Uncommon"
+  },
+  "lastEdited": "2019-12-18T10:36:36+0100",
+  "condition": "EX",
+  "isFoil": false,
+  "isSigned": false,
+  "isPlayset": false,
+  "isAltered": false
+}

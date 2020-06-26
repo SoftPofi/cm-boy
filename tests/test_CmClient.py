@@ -11,23 +11,23 @@ class TestCmClient(TestCase):
 
     def test_get_account_articles(self):
         resp = self.uut.get_account_articles()
-        self.assertResponseOK(resp)
+        self.assert_response_ok(resp)
 
     def test_get_account_stock(self):
         resp = self.uut.get_account_stock()
-        self.assertResponseOK(resp)
+        self.assert_response_ok(resp)
 
     def test_get_account_data(self):
         resp = self.uut.get_account_data()
-        self.assertResponseOK(resp)
+        self.assert_response_ok(resp)
 
     def test_get_card_info(self):
         resp = self.uut.get_card_info(self.product_id)
-        self.assertResponseOK(resp)
+        self.assert_response_ok(resp)
 
     def test_get_card_listing(self):
         resp = self.uut.get_card_listing(self.product_id)
-        self.assertResponseOK(resp)
+        self.assert_response_ok(resp)
 
     def test_put_card_price(self):
         example_card = {
@@ -39,7 +39,7 @@ class TestCmClient(TestCase):
                 }
         }
         resp = self.uut.put_card_price(example_card)
-        self.assertResponseOK(resp)
+        self.assert_response_ok(resp)
 
-    def assertResponseOK(self, resp):
+    def assert_response_ok(self, resp):
         self.assertIn(resp.status_code, [200, 206])
