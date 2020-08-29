@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from copy import deepcopy
+
 
 class CmFilter:
 
@@ -9,12 +11,14 @@ class CmFilter:
             raise ValueError("No config given")
 
     def prefilter(self, card_listings, card):
+        filtered_copy = deepcopy(card_listings)
         offers_to_remove = []
-        for offer in card_listings["article"]:
+        for offer in filtered_copy["article"]:
             if self._offer_not_matching_card(offer, card):
                 offers_to_remove.append(offer)
         for offer in offers_to_remove:
-            card_listings["article"].remove(offer)
+            filtered_copy["article"].remove(offer)
+        return filtered_copy
 
     def _offer_not_matching_card(self, offer, card):
         offer_country = offer["seller"]["address"]["country"]
@@ -23,7 +27,3 @@ class CmFilter:
         if offer["isPlayset"] != card["isPlayset"]:
             return True
         return False
-
-
-if __name__ == "__main__":
-    pass

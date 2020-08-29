@@ -1,0 +1,2368 @@
+{
+  "article": [
+    {
+      "idArticle": 497100874,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.02,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.02,
+      "priceGBP": 0.02,
+      "seller": {
+        "idUser": 1596521,
+        "username": "darknessHxC",
+        "registrationDate": "2014-05-07T16:56:46+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Martin"
+        },
+        "address": {
+          "country": "AT"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 4,
+        "reputation": 1,
+        "shipsFast": 8,
+        "sellCount": 120,
+        "soldItems": 611,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "497100874"
+        }
+      ]
+    },
+    {
+      "idArticle": 605808639,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.04,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.04,
+      "priceGBP": 0.04,
+      "seller": {
+        "idUser": 983305,
+        "username": "Tabsert",
+        "registrationDate": "2018-03-14T21:23:36+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Tabitha"
+        },
+        "address": {
+          "country": "LU"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 7,
+        "sellCount": 280,
+        "soldItems": 1317,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "605808639"
+        }
+      ]
+    },
+    {
+      "idArticle": 810622629,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "Fast & secure shipping!",
+      "price": 0.04,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.04,
+      "priceGBP": 0.04,
+      "seller": {
+        "idUser": 1602355,
+        "username": "Disordo",
+        "registrationDate": "2019-04-21T10:25:09+0200",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": "DisCardShop di Sapelza Manuel",
+          "firstName": "Manuel",
+          "lastName": "Sapelza"
+        },
+        "address": {
+          "name": "Manuel Sapelza",
+          "extra": null,
+          "street": "Via Moar zu Pirk 6",
+          "zip": "39030",
+          "city": "Lutago (BZ)",
+          "country": "IT"
+        },
+        "phone": "39-3347780824",
+        "email": "disordo91@gmail.com",
+        "vat": "IT03088560218",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 11,
+        "sellCount": 260,
+        "soldItems": 2554,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "810622629"
+        }
+      ]
+    },
+    {
+      "idArticle": 630309394,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.05,
+      "count": 3,
+      "inShoppingCart": false,
+      "priceEUR": 0.05,
+      "priceGBP": 0.05,
+      "seller": {
+        "idUser": 789038,
+        "username": "SRyser",
+        "registrationDate": "2019-12-17T17:18:59+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Stefan"
+        },
+        "address": {
+          "country": "CH"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 5,
+        "sellCount": 416,
+        "soldItems": 3250,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "630309394"
+        }
+      ]
+    },
+    {
+      "idArticle": 861806404,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.07,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.07,
+      "priceGBP": 0.07,
+      "seller": {
+        "idUser": 507610,
+        "username": "Trudlo",
+        "registrationDate": "2018-04-21T20:49:27+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Chris"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 1697,
+        "soldItems": 19318,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "861806404"
+        }
+      ]
+    },
+    {
+      "idArticle": 474024192,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.09,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.09,
+      "priceGBP": 0.09,
+      "seller": {
+        "idUser": 1666335,
+        "username": "michzib",
+        "registrationDate": "2017-06-15T21:02:28+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Michael"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 281,
+        "soldItems": 1168,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "474024192"
+        }
+      ]
+    },
+    {
+      "idArticle": 545053924,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 4,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 1781467,
+        "username": "helpoemer",
+        "registrationDate": "2015-02-20T17:34:10+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Patrick"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 1,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 8836,
+        "soldItems": 51606,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "545053924"
+        }
+      ]
+    },
+    {
+      "idArticle": 747931493,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "A22",
+      "price": 0.1,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 1404303,
+        "username": "Gamestower",
+        "registrationDate": "2017-01-25T16:08:57+0100",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": "Lugash s.a.r.l.",
+          "firstName": "Gilles",
+          "lastName": "Zanen"
+        },
+        "address": {
+          "name": "Gilles Zanen",
+          "extra": "Lugash s.a.r.l.",
+          "street": "Rue De La Gare 33",
+          "zip": "7535",
+          "city": "Mersch",
+          "country": "LU"
+        },
+        "phone": "35220600389",
+        "email": "gamestower@mailme.lu",
+        "vat": "LU29029768",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 2461,
+        "soldItems": 22725,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "747931493"
+        }
+      ]
+    },
+    {
+      "idArticle": 778361879,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "A20",
+      "price": 0.1,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 1404303,
+        "username": "Gamestower",
+        "registrationDate": "2017-01-25T16:08:57+0100",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": "Lugash s.a.r.l.",
+          "firstName": "Gilles",
+          "lastName": "Zanen"
+        },
+        "address": {
+          "name": "Gilles Zanen",
+          "extra": "Lugash s.a.r.l.",
+          "street": "Rue De La Gare 33",
+          "zip": "7535",
+          "city": "Mersch",
+          "country": "LU"
+        },
+        "phone": "35220600389",
+        "email": "gamestower@mailme.lu",
+        "vat": "LU29029768",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 2461,
+        "soldItems": 22725,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "778361879"
+        }
+      ]
+    },
+    {
+      "idArticle": 679091353,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 26070,
+        "username": "Bairanax",
+        "registrationDate": "2009-09-06T17:49:32+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Timo"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 2213,
+        "soldItems": 20968,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "679091353"
+        }
+      ]
+    },
+    {
+      "idArticle": 655304723,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 1942035,
+        "username": "Jan53",
+        "registrationDate": "2012-08-27T10:05:53+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Jan"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 31,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 1262,
+        "soldItems": 3761,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "655304723"
+        }
+      ]
+    },
+    {
+      "idArticle": 619360364,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 3,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 1660202,
+        "username": "pg7224",
+        "registrationDate": "2015-08-20T17:54:19+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Peter"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 3,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 588,
+        "soldItems": 2597,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "619360364"
+        }
+      ]
+    },
+    {
+      "idArticle": 678689898,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 207077,
+        "username": "tschudti",
+        "registrationDate": "2018-03-12T22:26:28+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Timo"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 246,
+        "soldItems": 746,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "678689898"
+        }
+      ]
+    },
+    {
+      "idArticle": 543175879,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 1161134,
+        "username": "Nlmmermehr",
+        "registrationDate": "2014-05-11T21:37:38+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Steffen"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 2,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 222,
+        "soldItems": 845,
+        "avgShippingTime": 2,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "543175879"
+        }
+      ]
+    },
+    {
+      "idArticle": 580081476,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 601559,
+        "username": "magicheldin",
+        "registrationDate": "2018-01-27T13:19:53+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Marisa"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 207,
+        "soldItems": 744,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "580081476"
+        }
+      ]
+    },
+    {
+      "idArticle": 600114511,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 2,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 73872,
+        "username": "Atzteki",
+        "registrationDate": "2012-03-04T22:48:29+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Artur"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 1,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 177,
+        "soldItems": 492,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "600114511"
+        }
+      ]
+    },
+    {
+      "idArticle": 884099429,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.1,
+      "count": 4,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 847903,
+        "username": "DannyGirl",
+        "registrationDate": "2020-07-27T19:07:25+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Bianca"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 2,
+        "sellCount": 77,
+        "soldItems": 762,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "884099429"
+        }
+      ]
+    },
+    {
+      "idArticle": 580828101,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "daily shipping Mo - Fr",
+      "price": 0.1,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.1,
+      "priceGBP": 0.1,
+      "seller": {
+        "idUser": 757362,
+        "username": "StefanRaunig",
+        "registrationDate": "2018-07-27T15:37:03+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Stefan"
+        },
+        "address": {
+          "country": "AT"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 49,
+        "soldItems": 359,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "580828101"
+        }
+      ]
+    },
+    {
+      "idArticle": 457337447,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.11,
+      "count": 8,
+      "inShoppingCart": false,
+      "priceEUR": 0.11,
+      "priceGBP": 0.11,
+      "seller": {
+        "idUser": 85739,
+        "username": "Rarehuntershop",
+        "registrationDate": "2012-07-15T20:05:53+0200",
+        "isCommercial": 2,
+        "isSeller": true,
+        "name": {
+          "company": "Rarehuntershop",
+          "firstName": "Alexander",
+          "lastName": "Fuchs"
+        },
+        "address": {
+          "name": "Alexander Fuchs",
+          "extra": null,
+          "street": "Hauptplatz 14",
+          "zip": "2320",
+          "city": "Schwechat",
+          "country": "AT"
+        },
+        "phone": "06648600208",
+        "email": "gamersunited@gmx.at",
+        "vat": "ATU39844807",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 5,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 36174,
+        "soldItems": 557803,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "457337447"
+        }
+      ]
+    },
+    {
+      "idArticle": 760588849,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "MANY OTHER CARDS! - FAST SHIPPING!",
+      "price": 0.45,
+      "count": 2,
+      "inShoppingCart": false,
+      "priceEUR": 0.45,
+      "priceGBP": 0.42,
+      "seller": {
+        "idUser": 63050,
+        "username": "CardPlanetAustria",
+        "registrationDate": "2011-10-11T13:14:21+0200",
+        "isCommercial": 2,
+        "isSeller": true,
+        "name": {
+          "company": null,
+          "firstName": "Harald",
+          "lastName": "Mautner"
+        },
+        "address": {
+          "name": "Harald Mautner",
+          "extra": "CardPlanetAustria",
+          "street": "Albersdorf 419/3",
+          "zip": "8200",
+          "city": "Albersdorf-Prebuch",
+          "country": "AT"
+        },
+        "phone": null,
+        "email": "cardplanetaustria@gmail.com",
+        "vat": "ATU71060709",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 2,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 23838,
+        "soldItems": 291866,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": true,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "760588849"
+        }
+      ]
+    },
+    {
+      "idArticle": 733999148,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "look at my other cards too!",
+      "price": 0.12,
+      "count": 3,
+      "inShoppingCart": false,
+      "priceEUR": 0.12,
+      "priceGBP": 0.12,
+      "seller": {
+        "idUser": 872061,
+        "username": "theNecromancer",
+        "registrationDate": "2019-04-29T09:49:14+0200",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": null,
+          "firstName": "Christian",
+          "lastName": "Auer"
+        },
+        "address": {
+          "name": "Christian Auer",
+          "extra": null,
+          "street": "Weiberfelderweg, 17",
+          "zip": "8054",
+          "city": "Graz",
+          "country": "AT"
+        },
+        "phone": "43-06648180988",
+        "email": "tcg-office@gmx.net",
+        "vat": "ATU61439278",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 4,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 2092,
+        "soldItems": 18762,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "733999148"
+        }
+      ]
+    },
+    {
+      "idArticle": 686635693,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.12,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.12,
+      "priceGBP": 0.12,
+      "seller": {
+        "idUser": 1212247,
+        "username": "realzod",
+        "registrationDate": "2013-08-30T14:28:27+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Markus"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 1,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 319,
+        "soldItems": 986,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "686635693"
+        }
+      ]
+    },
+    {
+      "idArticle": 872276394,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.12,
+      "count": 2,
+      "inShoppingCart": false,
+      "priceEUR": 0.12,
+      "priceGBP": 0.12,
+      "seller": {
+        "idUser": 300515,
+        "username": "AbbysSTORE",
+        "registrationDate": "2020-02-18T21:57:27+0100",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": "Occhi e mani j.d.o.o.",
+          "firstName": "Filip",
+          "lastName": "Golac"
+        },
+        "address": {
+          "name": "Filip Golac",
+          "extra": null,
+          "street": "5. Poljanice 24",
+          "zip": "10040",
+          "city": "Zagreb",
+          "country": "HR"
+        },
+        "phone": "385-00385912400091",
+        "email": "abbys.storeeu@gmail.com",
+        "vat": "HR24328933412",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 191,
+        "soldItems": 1582,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "872276394"
+        }
+      ]
+    },
+    {
+      "idArticle": 896863994,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.12,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.12,
+      "priceGBP": 0.12,
+      "seller": {
+        "idUser": 915304,
+        "username": "shokxx",
+        "registrationDate": "2019-03-02T21:42:00+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Tobias"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 137,
+        "soldItems": 834,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "896863994"
+        }
+      ]
+    },
+    {
+      "idArticle": 635676154,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.12,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.12,
+      "priceGBP": 0.12,
+      "seller": {
+        "idUser": 655679,
+        "username": "Hawknight",
+        "registrationDate": "2019-07-27T22:39:18+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Heiko"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 2,
+        "sellCount": 97,
+        "soldItems": 368,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "635676154"
+        }
+      ]
+    },
+    {
+      "idArticle": 879190619,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.12,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.12,
+      "priceGBP": 0.12,
+      "seller": {
+        "idUser": 277150,
+        "username": "M1o2M3o4",
+        "registrationDate": "2019-12-06T12:33:24+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Mawe-Rick"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 2,
+        "sellCount": 89,
+        "soldItems": 540,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "879190619"
+        }
+      ]
+    },
+    {
+      "idArticle": 860882844,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.13,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.13,
+      "priceGBP": 0.13,
+      "seller": {
+        "idUser": 371348,
+        "username": "Haggarrrrd",
+        "registrationDate": "2014-10-13T18:09:24+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Christian"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 252,
+        "soldItems": 565,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "860882844"
+        }
+      ]
+    },
+    {
+      "idArticle": 760588739,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "MANY OTHER CARDS! - FAST SHIPPING!",
+      "price": 0.14,
+      "count": 25,
+      "inShoppingCart": false,
+      "priceEUR": 0.14,
+      "priceGBP": 0.13,
+      "seller": {
+        "idUser": 63050,
+        "username": "CardPlanetAustria",
+        "registrationDate": "2011-10-11T13:14:21+0200",
+        "isCommercial": 2,
+        "isSeller": true,
+        "name": {
+          "company": null,
+          "firstName": "Harald",
+          "lastName": "Mautner"
+        },
+        "address": {
+          "name": "Harald Mautner",
+          "extra": "CardPlanetAustria",
+          "street": "Albersdorf 419/3",
+          "zip": "8200",
+          "city": "Albersdorf-Prebuch",
+          "country": "AT"
+        },
+        "phone": null,
+        "email": "cardplanetaustria@gmail.com",
+        "vat": "ATU71060709",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 2,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 23838,
+        "soldItems": 291866,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "760588739"
+        }
+      ]
+    },
+    {
+      "idArticle": 588716041,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.14,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.14,
+      "priceGBP": 0.13,
+      "seller": {
+        "idUser": 638034,
+        "username": "pompadia",
+        "registrationDate": "2016-09-12T22:55:47+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Henry"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 243,
+        "soldItems": 1028,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "588716041"
+        }
+      ]
+    },
+    {
+      "idArticle": 880020859,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.15,
+      "count": 2,
+      "inShoppingCart": false,
+      "priceEUR": 0.15,
+      "priceGBP": 0.14,
+      "seller": {
+        "idUser": 1345810,
+        "username": "StefanPP",
+        "registrationDate": "2017-03-20T11:49:49+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Stefan"
+        },
+        "address": {
+          "country": "AT"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 5,
+        "sellCount": 2668,
+        "soldItems": 31955,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "880020859"
+        }
+      ]
+    },
+    {
+      "idArticle": 608491949,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.15,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.15,
+      "priceGBP": 0.14,
+      "seller": {
+        "idUser": 32369,
+        "username": "SMC1",
+        "registrationDate": "2010-02-23T15:58:29+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Harald"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 5,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 2169,
+        "soldItems": 11077,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "608491949"
+        }
+      ]
+    },
+    {
+      "idArticle": 588777991,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.15,
+      "count": 2,
+      "inShoppingCart": false,
+      "priceEUR": 0.15,
+      "priceGBP": 0.14,
+      "seller": {
+        "idUser": 813237,
+        "username": "Ewaldinho",
+        "registrationDate": "2016-10-16T08:54:19+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Ewald"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 673,
+        "soldItems": 1759,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "588777991"
+        }
+      ]
+    },
+    {
+      "idArticle": 459644392,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "boosterfrisch",
+      "price": 0.15,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.15,
+      "priceGBP": 0.14,
+      "seller": {
+        "idUser": 67246,
+        "username": "Pergamentpapier",
+        "registrationDate": "2011-12-06T11:40:52+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Michael"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 489,
+        "soldItems": 1383,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "459644392"
+        }
+      ]
+    },
+    {
+      "idArticle": 451890087,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.15,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.15,
+      "priceGBP": 0.14,
+      "seller": {
+        "idUser": 1540052,
+        "username": "Hesperus",
+        "registrationDate": "2013-01-20T20:40:52+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Denny"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 467,
+        "soldItems": 1920,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "451890087"
+        }
+      ]
+    },
+    {
+      "idArticle": 655240563,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.15,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.15,
+      "priceGBP": 0.14,
+      "seller": {
+        "idUser": 949749,
+        "username": "Sepsis0815",
+        "registrationDate": "2015-08-21T18:53:17+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Benjamin"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 1,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 215,
+        "soldItems": 719,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "655240563"
+        }
+      ]
+    },
+    {
+      "idArticle": 783927014,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "Fast shipping, check our other cards",
+      "price": 0.15,
+      "count": 4,
+      "inShoppingCart": false,
+      "priceEUR": 0.15,
+      "priceGBP": 0.14,
+      "seller": {
+        "idUser": 300515,
+        "username": "AbbysSTORE",
+        "registrationDate": "2020-02-18T21:57:27+0100",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": "Occhi e mani j.d.o.o.",
+          "firstName": "Filip",
+          "lastName": "Golac"
+        },
+        "address": {
+          "name": "Filip Golac",
+          "extra": null,
+          "street": "5. Poljanice 24",
+          "zip": "10040",
+          "city": "Zagreb",
+          "country": "HR"
+        },
+        "phone": "385-00385912400091",
+        "email": "abbys.storeeu@gmail.com",
+        "vat": "HR24328933412",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 191,
+        "soldItems": 1582,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "783927014"
+        }
+      ]
+    },
+    {
+      "idArticle": 613271974,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.18,
+      "count": 2,
+      "inShoppingCart": false,
+      "priceEUR": 0.18,
+      "priceGBP": 0.17,
+      "seller": {
+        "idUser": 728950,
+        "username": "LA-Games",
+        "registrationDate": "2017-11-04T23:41:14+0100",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": "LA-Games",
+          "firstName": "Daniel",
+          "lastName": "Zellner"
+        },
+        "address": {
+          "name": "Daniel Zellner",
+          "extra": null,
+          "street": "Mozartstraße 22",
+          "zip": "84036",
+          "city": "Kumhausen",
+          "country": "D"
+        },
+        "phone": "01717412751",
+        "email": "zellner91@web.de",
+        "vat": "DE296632890",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 6,
+        "reputation": 1,
+        "shipsFast": 2,
+        "sellCount": 7588,
+        "soldItems": 90634,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "613271974"
+        }
+      ]
+    },
+    {
+      "idArticle": 765445679,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.19,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.19,
+      "priceGBP": 0.18,
+      "seller": {
+        "idUser": 1212247,
+        "username": "realzod",
+        "registrationDate": "2013-08-30T14:28:27+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Markus"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 1,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 319,
+        "soldItems": 986,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "765445679"
+        }
+      ]
+    },
+    {
+      "idArticle": 904068589,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.19,
+      "count": 2,
+      "inShoppingCart": false,
+      "priceEUR": 0.19,
+      "priceGBP": 0.18,
+      "seller": {
+        "idUser": 545115,
+        "username": "Erschonwieder",
+        "registrationDate": "2019-03-17T17:55:17+0100",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Maurice"
+        },
+        "address": {
+          "country": "D"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 2,
+        "sellCount": 100,
+        "soldItems": 397,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "904068589"
+        }
+      ]
+    },
+    {
+      "idArticle": 445228512,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "TOP CARDS - TOP PRICES - FAST SHIPPING",
+      "price": 0.2,
+      "count": 2,
+      "inShoppingCart": false,
+      "priceEUR": 0.2,
+      "priceGBP": 0.19,
+      "seller": {
+        "idUser": 862023,
+        "username": "daniel20044",
+        "registrationDate": "2013-09-23T17:51:10+0200",
+        "isCommercial": 0,
+        "isSeller": true,
+        "name": {
+          "firstName": "Daniel"
+        },
+        "address": {
+          "country": "AT"
+        },
+        "phone": "",
+        "email": "",
+        "vat": "",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 6,
+        "sellCount": 8261,
+        "soldItems": 83848,
+        "avgShippingTime": 0,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "445228512"
+        }
+      ]
+    },
+    {
+      "idArticle": 883903539,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.2,
+      "count": 25,
+      "inShoppingCart": false,
+      "priceEUR": 0.2,
+      "priceGBP": 0.19,
+      "seller": {
+        "idUser": 541172,
+        "username": "BattleBearTCG",
+        "registrationDate": "2015-02-07T21:50:10+0100",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": "Battle Bear UG (haftungsbeschränkt) & Co. KG",
+          "firstName": "Ramon",
+          "lastName": "Kupper"
+        },
+        "address": {
+          "name": "Ramon Kupper",
+          "extra": "Battle Bear UG & Co. KG",
+          "street": "Schubertstrasse 35",
+          "zip": "67655",
+          "city": "Kaiserslautern",
+          "country": "D"
+        },
+        "phone": "49-63135477280",
+        "email": "cardmarket@battle-bear.de",
+        "vat": "DE294154250",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 3,
+        "reputation": 1,
+        "shipsFast": 4,
+        "sellCount": 5018,
+        "soldItems": 35509,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "883903539"
+        }
+      ]
+    },
+    {
+      "idArticle": 897275674,
+      "idProduct": 377181,
+      "language": {
+        "idLanguage": 3,
+        "languageName": "German"
+      },
+      "comments": "",
+      "price": 0.2,
+      "count": 1,
+      "inShoppingCart": false,
+      "priceEUR": 0.2,
+      "priceGBP": 0.19,
+      "seller": {
+        "idUser": 255904,
+        "username": "Y-Magic",
+        "registrationDate": "2017-11-15T16:51:06+0100",
+        "isCommercial": 1,
+        "isSeller": true,
+        "name": {
+          "company": "Postagentur Punkt und Komma ",
+          "firstName": "Emanuele",
+          "lastName": "Biel"
+        },
+        "address": {
+          "name": "Emanuele Biel",
+          "extra": "Postfiliale Bad Harzburg ",
+          "street": "HERZOG-WILHELM-STR. 80",
+          "zip": "38667",
+          "city": "BAD HARZBURG",
+          "country": "D"
+        },
+        "phone": "015233929215",
+        "email": "info@ymagic.de",
+        "vat": "21/104/04625",
+        "legalInformation": "",
+        "riskGroup": 0,
+        "lossPercentage": "0 - 2%",
+        "unsentShipments": 0,
+        "reputation": 1,
+        "shipsFast": 3,
+        "sellCount": 3947,
+        "soldItems": 26046,
+        "avgShippingTime": 1,
+        "onVacation": false
+      },
+      "condition": "NM",
+      "isFoil": false,
+      "isSigned": false,
+      "isPlayset": false,
+      "isAltered": false,
+      "links": [
+        {
+          "rel": "buy",
+          "href": "shoppingcart",
+          "method": "PUT",
+          "action": "add",
+          "idArticle": "897275674"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "/articles/377181?start=0&maxResults=42&idLanguage=3&minUserScore=1&minCondition=NM&isFoil=false&isSigned=false&isAltered=false",
+      "method": "GET"
+    },
+    {
+      "rel": "product",
+      "href": "/products/377181",
+      "method": "GET"
+    }
+  ]
+}

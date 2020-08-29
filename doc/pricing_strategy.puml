@@ -1,0 +1,18 @@
+@startuml
+
+state can_price_be_adjusted <<choice>>
+state is_position_in_range_min_max <<choice>> 
+state price_changed <<choice>> 
+
+[*] --> is_position_in_range_min_max: is my position in range
+is_position_in_range_min_max --> lookup_min_max_from_db: No
+lookup_min_max_from_db --> can_price_be_adjusted:  is price already min?
+can_price_be_adjusted --> [*]: Yes
+is_position_in_range_min_max --> [*]: Yes
+
+can_price_be_adjusted --> match_price_of_target_element_X_if_applicable: No
+match_price_of_target_element_X_if_applicable --> price_changed: Price changed?
+price_changed -> upload_price_change: Yes
+price_changed -> [*]: No
+upload_price_change -> [*]
+@enduml

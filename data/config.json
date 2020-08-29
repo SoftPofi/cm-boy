@@ -2,14 +2,157 @@
   "urls": {
     "base_url": "https://api.cardmarket.com/ws/v2.0/output.json",
     "base_url_no_json": "https://api.cardmarket.com/ws/v2.0",
-    "base_url_sandbox": "https://sandbox.cardmarket.com/ws/v2.0"
+    "base_url_sandbox": "https://sandbox.cardmarket.com/ws/v2.0/output.json"
   },
   "product_default_params": {
     "start": 0,
-    "maxResults": 25,
+    "maxResults": 200,
     "minUserScore": 1
   },
   "listing_static_filter": {
     "seller_country": "D"
+  },
+  "algo_parameter":
+  {
+    "Mythic": {
+      "min_price":
+      {
+        "normal": 0.19,
+        "playset": 0.98,
+        "foil": 0.34
+      },
+      "position":
+      {
+        "target": 5,
+        "min": 3,
+        "max": 7
+      },
+      "position_foil":
+      {
+        "target": 2,
+        "min": 2,
+        "max": 4
+      }
+    },
+    "Rare": {
+      "min_price":
+      {
+        "normal": 0.09,
+        "playset": 0.38,
+        "foil": 0.19
+      },
+      "position":
+      {
+        "target": 5,
+        "min": 3,
+        "max": 7
+      },
+      "position_foil":
+      {
+        "target": 2,
+        "min": 2,
+        "max": 4
+      }
+    },
+    "Uncommon": {
+      "min_price":
+      {
+        "normal": 0.04,
+        "playset": 0.14,
+        "foil": 0.06
+      },
+      "position":
+      {
+        "target": 4,
+        "min": 3,
+        "max": 10
+      },
+      "position_foil":
+      {
+        "target": 2,
+        "min": 2,
+        "max": 4
+      }
+    },
+    "Common": {
+      "min_price":
+      {
+        "normal": 0.04,
+        "playset": 0.14,
+        "foil": 0.04
+      },
+      "position":
+      {
+        "target": 4,
+        "min": 3,
+        "max": 20
+      },
+      "position_foil":
+      {
+        "target": 2,
+        "min": 2,
+        "max": 6
+      }
+    },
+    "Land": {
+      "min_price":
+      {
+        "normal": 0.04,
+        "playset": 0.14,
+        "foil": 0.09
+      },
+      "position":
+      {
+        "target": 4,
+        "min": 3,
+        "max": 20
+      },
+      "position_foil":
+      {
+        "target": 2,
+        "min": 2,
+        "max": 6
+      }
+    },
+    "Tip Card": {
+      "min_price":
+      {
+        "normal": 0.03,
+        "playset": 0.14,
+        "foil": 0.09
+      },
+      "position":
+      {
+        "target": 1,
+        "min": 1,
+        "max": 20
+      },
+      "position_foil":
+      {
+        "target": 2,
+        "min": 2,
+        "max": 6
+      }
+    },
+    "Token": {
+      "min_price":
+      {
+        "normal": 0.03,
+        "playset": 0.14,
+        "foil": 0.09
+      },
+      "position":
+      {
+        "target": 1,
+        "min": 1,
+        "max": 20
+      },
+      "position_foil":
+      {
+        "target": 2,
+        "min": 2,
+        "max": 6
+      }
+    }
   }
 }
