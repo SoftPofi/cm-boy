@@ -1,96 +1,6 @@
 {
  "article": [
   {
-   "idArticle": 808876279,
-   "idProduct": 27,
-   "language": {
-    "idLanguage": 3,
-    "languageName": "German"
-   },
-   "comments": "Aus dem Booster in die H\u00c3\u00bclle",
-   "price": 0.02,
-   "count": 1,
-   "inShoppingCart": false,
-   "priceEUR": 0.02,
-   "priceGBP": 0.02,
-   "seller": {
-    "idUser": 0,
-    "username": "",
-    "registrationDate": "2010-08-08T21:48:58+0200",
-    "isCommercial": 0,
-    "isSeller": true,
-    "legalInformation": "",
-    "riskGroup": 0,
-    "lossPercentage": "0 - 2%",
-    "unsentShipments": 3,
-    "reputation": 1,
-    "shipsFast": 3,
-    "sellCount": 780,
-    "soldItems": 4854,
-    "avgShippingTime": 1,
-    "onVacation": false
-   },
-   "condition": "MT",
-   "isFoil": false,
-   "isSigned": false,
-   "isPlayset": false,
-   "isAltered": false,
-   "links": [
-    {
-     "rel": "buy",
-     "href": "shoppingcart",
-     "method": "PUT",
-     "action": "add",
-     "idArticle": "808876279"
-    }
-   ]
-  },
-  {
-   "idArticle": 309971261,
-   "idProduct": 27,
-   "language": {
-    "idLanguage": 3,
-    "languageName": "German"
-   },
-   "comments": "",
-   "price": 0.02,
-   "count": 1,
-   "inShoppingCart": false,
-   "priceEUR": 0.02,
-   "priceGBP": 0.02,
-   "seller": {
-    "idUser": 0,
-    "username": "",
-    "registrationDate": "2015-07-14T08:24:13+0200",
-    "isCommercial": 0,
-    "isSeller": true,
-    "legalInformation": "",
-    "riskGroup": 0,
-    "lossPercentage": "0 - 2%",
-    "unsentShipments": 4,
-    "reputation": 1,
-    "shipsFast": 4,
-    "sellCount": 682,
-    "soldItems": 10021,
-    "avgShippingTime": 1,
-    "onVacation": false
-   },
-   "condition": "NM",
-   "isFoil": false,
-   "isSigned": false,
-   "isPlayset": false,
-   "isAltered": false,
-   "links": [
-    {
-     "rel": "buy",
-     "href": "shoppingcart",
-     "method": "PUT",
-     "action": "add",
-     "idArticle": "309971261"
-    }
-   ]
-  },
-  {
    "idArticle": 434493339,
    "idProduct": 27,
    "language": {
@@ -99,71 +9,41 @@
    },
    "comments": "",
    "price": 0.02,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
    "count": 1,
    "inShoppingCart": false,
-   "priceEUR": 0.02,
-   "priceGBP": 0.02,
-   "seller": {
-    "idUser": 0,
-    "username": "",
-    "registrationDate": "2011-10-31T15:25:21+0100",
-    "isCommercial": 0,
-    "isSeller": true,
-    "legalInformation": "",
-    "riskGroup": 0,
-    "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 4,
-    "sellCount": 445,
-    "soldItems": 1809,
-    "avgShippingTime": 1,
-    "onVacation": false
-   },
-   "condition": "NM",
-   "isFoil": false,
-   "isSigned": false,
-   "isPlayset": false,
-   "isAltered": false,
-   "links": [
+   "prices": [
     {
-     "rel": "buy",
-     "href": "shoppingcart",
-     "method": "PUT",
-     "action": "add",
-     "idArticle": "434493339"
+     "price": 0.02,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.02,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
     }
-   ]
-  },
-  {
-   "idArticle": 521798124,
-   "idProduct": 27,
-   "language": {
-    "idLanguage": 3,
-    "languageName": "German"
-   },
-   "comments": "I dissolve my collection",
-   "price": 0.02,
-   "count": 1,
-   "inShoppingCart": false,
-   "priceEUR": 0.02,
-   "priceGBP": 0.02,
+   ],
    "seller": {
     "idUser": 0,
     "username": "",
-    "registrationDate": "2019-09-01T13:41:52+0200",
     "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 469,
+    "onVacation": false,
+    "registrationDate": "2011-10-31T15:25:21+0100",
     "isSeller": true,
     "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 4,
+    "soldItems": 1935,
+    "avgShippingTime": 1,
     "riskGroup": 0,
     "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 5,
-    "sellCount": 107,
-    "soldItems": 656,
-    "avgShippingTime": 1,
-    "onVacation": false
+    "address": {
+     "country": "D"
+    }
    },
    "condition": "NM",
    "isFoil": false,
@@ -176,7 +56,7 @@
      "href": "shoppingcart",
      "method": "PUT",
      "action": "add",
-     "idArticle": "521798124"
+     "idArticle": 434493339
     }
    ]
   },
@@ -189,26 +69,41 @@
    },
    "comments": "",
    "price": 0.02,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
    "count": 2,
    "inShoppingCart": false,
-   "priceEUR": 0.02,
-   "priceGBP": 0.02,
+   "prices": [
+    {
+     "price": 0.02,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.02,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
    "seller": {
     "idUser": 0,
     "username": "",
-    "registrationDate": "2018-08-12T20:13:58+0200",
     "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 106,
+    "onVacation": false,
+    "registrationDate": "2018-08-12T20:13:58+0200",
     "isSeller": true,
     "legalInformation": "",
-    "riskGroup": 0,
-    "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
+    "unsentShipments": 1,
     "shipsFast": 4,
-    "sellCount": 106,
     "soldItems": 311,
     "avgShippingTime": 1,
-    "onVacation": false
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
    },
    "condition": "NM",
    "isFoil": false,
@@ -221,52 +116,7 @@
      "href": "shoppingcart",
      "method": "PUT",
      "action": "add",
-     "idArticle": "383856365"
-    }
-   ]
-  },
-  {
-   "idArticle": 349866655,
-   "idProduct": 27,
-   "language": {
-    "idLanguage": 3,
-    "languageName": "German"
-   },
-   "comments": "",
-   "price": 0.02,
-   "count": 2,
-   "inShoppingCart": false,
-   "priceEUR": 0.02,
-   "priceGBP": 0.02,
-   "seller": {
-    "idUser": 0,
-    "username": "",
-    "registrationDate": "2009-10-27T21:37:41+0100",
-    "isCommercial": 0,
-    "isSeller": true,
-    "legalInformation": "",
-    "riskGroup": 0,
-    "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 5,
-    "sellCount": 378,
-    "soldItems": 1897,
-    "avgShippingTime": 1,
-    "onVacation": false
-   },
-   "condition": "EX",
-   "isFoil": false,
-   "isSigned": false,
-   "isPlayset": false,
-   "isAltered": false,
-   "links": [
-    {
-     "rel": "buy",
-     "href": "shoppingcart",
-     "method": "PUT",
-     "action": "add",
-     "idArticle": "349866655"
+     "idArticle": 383856365
     }
    ]
   },
@@ -279,26 +129,41 @@
    },
    "comments": "",
    "price": 0.03,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
    "count": 1,
    "inShoppingCart": false,
-   "priceEUR": 0.03,
-   "priceGBP": 0.03,
+   "prices": [
+    {
+     "price": 0.03,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.03,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
    "seller": {
     "idUser": 0,
     "username": "",
-    "registrationDate": "2009-10-27T21:37:41+0100",
     "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 405,
+    "onVacation": false,
+    "registrationDate": "2009-10-27T21:37:41+0100",
     "isSeller": true,
     "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 4,
+    "soldItems": 2179,
+    "avgShippingTime": 1,
     "riskGroup": 0,
     "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 5,
-    "sellCount": 378,
-    "soldItems": 1897,
-    "avgShippingTime": 1,
-    "onVacation": false
+    "address": {
+     "country": "D"
+    }
    },
    "condition": "NM",
    "isFoil": false,
@@ -311,7 +176,7 @@
      "href": "shoppingcart",
      "method": "PUT",
      "action": "add",
-     "idArticle": "349866637"
+     "idArticle": 349866637
     }
    ]
   },
@@ -324,71 +189,41 @@
    },
    "comments": "AI-538",
    "price": 0.05,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
    "count": 3,
    "inShoppingCart": false,
-   "priceEUR": 0.05,
-   "priceGBP": 0.05,
-   "seller": {
-    "idUser": 0,
-    "username": "",
-    "registrationDate": "2010-09-26T23:04:30+0200",
-    "isCommercial": 1,
-    "isSeller": true,
-    "legalInformation": "",
-    "riskGroup": 0,
-    "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 4,
-    "sellCount": 8835,
-    "soldItems": 66494,
-    "avgShippingTime": 1,
-    "onVacation": false
-   },
-   "condition": "NM",
-   "isFoil": false,
-   "isSigned": false,
-   "isPlayset": false,
-   "isAltered": false,
-   "links": [
+   "prices": [
     {
-     "rel": "buy",
-     "href": "shoppingcart",
-     "method": "PUT",
-     "action": "add",
-     "idArticle": "329274486"
+     "price": 0.05,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.05,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
     }
-   ]
-  },
-  {
-   "idArticle": 278781209,
-   "idProduct": 27,
-   "language": {
-    "idLanguage": 3,
-    "languageName": "German"
-   },
-   "comments": "",
-   "price": 0.05,
-   "count": 1,
-   "inShoppingCart": false,
-   "priceEUR": 0.05,
-   "priceGBP": 0.05,
+   ],
    "seller": {
     "idUser": 0,
     "username": "",
-    "registrationDate": "2010-04-19T11:00:18+0200",
     "isCommercial": 1,
+    "reputation": 1,
+    "sellCount": 9112,
+    "onVacation": false,
+    "registrationDate": "2010-09-26T23:04:30+0200",
     "isSeller": true,
     "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 4,
+    "soldItems": 70067,
+    "avgShippingTime": 1,
     "riskGroup": 0,
     "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 3,
-    "sellCount": 6433,
-    "soldItems": 50624,
-    "avgShippingTime": 1,
-    "onVacation": false
+    "address": {
+     "country": "D"
+    }
    },
    "condition": "NM",
    "isFoil": false,
@@ -401,7 +236,7 @@
      "href": "shoppingcart",
      "method": "PUT",
      "action": "add",
-     "idArticle": "278781209"
+     "idArticle": 329274486
     }
    ]
   },
@@ -414,26 +249,41 @@
    },
    "comments": "",
    "price": 0.05,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
    "count": 1,
    "inShoppingCart": false,
-   "priceEUR": 0.05,
-   "priceGBP": 0.05,
+   "prices": [
+    {
+     "price": 0.05,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.05,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
    "seller": {
     "idUser": 0,
     "username": "",
-    "registrationDate": "2008-01-09T21:35:37+0100",
     "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 3534,
+    "onVacation": false,
+    "registrationDate": "2008-01-09T21:35:37+0100",
     "isSeller": true,
     "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 3,
+    "soldItems": 27062,
+    "avgShippingTime": 1,
     "riskGroup": 0,
     "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 4,
-    "sellCount": 3407,
-    "soldItems": 26386,
-    "avgShippingTime": 1,
-    "onVacation": false
+    "address": {
+     "country": "D"
+    }
    },
    "condition": "NM",
    "isFoil": false,
@@ -446,86 +296,56 @@
      "href": "shoppingcart",
      "method": "PUT",
      "action": "add",
-     "idArticle": "149148080"
+     "idArticle": 149148080
     }
    ]
   },
   {
-   "idArticle": 126472058,
+   "idArticle": 149848718,
    "idProduct": 27,
    "language": {
     "idLanguage": 3,
     "languageName": "German"
    },
-   "comments": "",
-   "price": 0.05,
+   "comments": "-ki1- in near mint or better. Lots of foils offered.Please check it.",
+   "price": 0.06,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
    "count": 1,
    "inShoppingCart": false,
-   "priceEUR": 0.05,
-   "priceGBP": 0.05,
-   "seller": {
-    "idUser": 0,
-    "username": "",
-    "registrationDate": "2010-07-20T00:49:34+0200",
-    "isCommercial": 1,
-    "isSeller": true,
-    "legalInformation": "",
-    "riskGroup": 0,
-    "lossPercentage": "0 - 2%",
-    "unsentShipments": 1,
-    "reputation": 1,
-    "shipsFast": 4,
-    "sellCount": 7979,
-    "soldItems": 55976,
-    "avgShippingTime": 1,
-    "onVacation": false
-   },
-   "condition": "EX",
-   "isFoil": false,
-   "isSigned": false,
-   "isPlayset": false,
-   "isAltered": false,
-   "links": [
+   "prices": [
     {
-     "rel": "buy",
-     "href": "shoppingcart",
-     "method": "PUT",
-     "action": "add",
-     "idArticle": "126472058"
+     "price": 0.06,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.06,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
     }
-   ]
-  },
-  {
-   "idArticle": 613942484,
-   "idProduct": 27,
-   "language": {
-    "idLanguage": 3,
-    "languageName": "German"
-   },
-   "comments": "",
-   "price": 0.05,
-   "count": 1,
-   "inShoppingCart": false,
-   "priceEUR": 0.05,
-   "priceGBP": 0.05,
+   ],
    "seller": {
     "idUser": 0,
     "username": "",
-    "registrationDate": "2012-07-10T16:51:19+0200",
     "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 939,
+    "onVacation": false,
+    "registrationDate": "2008-10-19T19:43:35+0200",
     "isSeller": true,
     "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 3,
+    "soldItems": 7029,
+    "avgShippingTime": 1,
     "riskGroup": 0,
     "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 4,
-    "sellCount": 7126,
-    "soldItems": 67235,
-    "avgShippingTime": 1,
-    "onVacation": false
+    "address": {
+     "country": "D"
+    }
    },
-   "condition": "EX",
+   "condition": "NM",
    "isFoil": false,
    "isSigned": false,
    "isPlayset": false,
@@ -536,41 +356,416 @@
      "href": "shoppingcart",
      "method": "PUT",
      "action": "add",
-     "idArticle": "613942484"
+     "idArticle": 149848718
     }
    ]
   },
   {
-   "idArticle": 350801894,
+   "idArticle": 288850288,
+   "idProduct": 27,
+   "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+   },
+   "comments": "no orders under 2 \u00e2\u201a\u00ac",
+   "price": 0.07,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
+   "count": 1,
+   "inShoppingCart": false,
+   "prices": [
+    {
+     "price": 0.07,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.07,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
+   "seller": {
+    "idUser": 0,
+    "username": "",
+    "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 1613,
+    "onVacation": false,
+    "registrationDate": "2013-02-13T00:48:29+0100",
+    "isSeller": true,
+    "legalInformation": "",
+    "unsentShipments": 1,
+    "shipsFast": 5,
+    "soldItems": 5186,
+    "avgShippingTime": 1,
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
+   },
+   "condition": "NM",
+   "isFoil": false,
+   "isSigned": false,
+   "isPlayset": false,
+   "isAltered": false,
+   "links": [
+    {
+     "rel": "buy",
+     "href": "shoppingcart",
+     "method": "PUT",
+     "action": "add",
+     "idArticle": 288850288
+    }
+   ]
+  },
+  {
+   "idArticle": 68763411,
+   "idProduct": 27,
+   "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+   },
+   "comments": "ungespielt, near mint oder besser; Versand in semi-rigid card holder oder Luftpolsterversandtasche",
+   "price": 0.09,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
+   "count": 8,
+   "inShoppingCart": false,
+   "prices": [
+    {
+     "price": 0.09,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.09,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
+   "seller": {
+    "idUser": 0,
+    "username": "",
+    "isCommercial": 1,
+    "reputation": 1,
+    "sellCount": 11967,
+    "onVacation": false,
+    "registrationDate": "2011-01-16T12:47:12+0100",
+    "isSeller": true,
+    "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 3,
+    "soldItems": 156762,
+    "avgShippingTime": 1,
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
+   },
+   "condition": "NM",
+   "isFoil": false,
+   "isSigned": false,
+   "isPlayset": false,
+   "isAltered": false,
+   "links": [
+    {
+     "rel": "buy",
+     "href": "shoppingcart",
+     "method": "PUT",
+     "action": "add",
+     "idArticle": 68763411
+    }
+   ]
+  },
+  {
+   "idArticle": 140401289,
+   "idProduct": 27,
+   "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+   },
+   "comments": "Versand in Schutzh\u00c3\u00bclle",
+   "price": 0.1,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
+   "count": 1,
+   "inShoppingCart": false,
+   "prices": [
+    {
+     "price": 0.1,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.1,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
+   "seller": {
+    "idUser": 0,
+    "username": "",
+    "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 2016,
+    "onVacation": false,
+    "registrationDate": "2009-01-23T17:50:55+0100",
+    "isSeller": true,
+    "legalInformation": "",
+    "unsentShipments": 2,
+    "shipsFast": 3,
+    "soldItems": 6363,
+    "avgShippingTime": 1,
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
+   },
+   "condition": "MT",
+   "isFoil": false,
+   "isSigned": false,
+   "isPlayset": false,
+   "isAltered": false,
+   "links": [
+    {
+     "rel": "buy",
+     "href": "shoppingcart",
+     "method": "PUT",
+     "action": "add",
+     "idArticle": 140401289
+    }
+   ]
+  },
+  {
+   "idArticle": 363596939,
    "idProduct": 27,
    "language": {
     "idLanguage": 3,
     "languageName": "German"
    },
    "comments": "",
-   "price": 0.05,
+   "price": 0.1,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
+   "count": 1,
+   "inShoppingCart": false,
+   "prices": [
+    {
+     "price": 0.1,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.1,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
+   "seller": {
+    "idUser": 0,
+    "username": "",
+    "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 8471,
+    "onVacation": false,
+    "registrationDate": "2008-12-14T23:35:57+0100",
+    "isSeller": true,
+    "legalInformation": "",
+    "unsentShipments": 1,
+    "shipsFast": 3,
+    "soldItems": 56395,
+    "avgShippingTime": 1,
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
+   },
+   "condition": "NM",
+   "isFoil": false,
+   "isSigned": false,
+   "isPlayset": false,
+   "isAltered": false,
+   "links": [
+    {
+     "rel": "buy",
+     "href": "shoppingcart",
+     "method": "PUT",
+     "action": "add",
+     "idArticle": 363596939
+    }
+   ]
+  },
+  {
+   "idArticle": 636014239,
+   "idProduct": 27,
+   "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+   },
+   "comments": "fast shipping",
+   "price": 0.1,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
+   "count": 1,
+   "inShoppingCart": false,
+   "prices": [
+    {
+     "price": 0.1,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.1,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
+   "seller": {
+    "idUser": 0,
+    "username": "",
+    "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 3049,
+    "onVacation": false,
+    "registrationDate": "2009-12-19T17:49:09+0100",
+    "isSeller": true,
+    "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 3,
+    "soldItems": 11638,
+    "avgShippingTime": 1,
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
+   },
+   "condition": "NM",
+   "isFoil": false,
+   "isSigned": false,
+   "isPlayset": false,
+   "isAltered": false,
+   "links": [
+    {
+     "rel": "buy",
+     "href": "shoppingcart",
+     "method": "PUT",
+     "action": "add",
+     "idArticle": 636014239
+    }
+   ]
+  },
+  {
+   "idArticle": 63951569,
+   "idProduct": 27,
+   "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+   },
+   "comments": "",
+   "price": 0.1,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
+   "count": 1,
+   "inShoppingCart": false,
+   "prices": [
+    {
+     "price": 0.1,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.1,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
+   "seller": {
+    "idUser": 0,
+    "username": "",
+    "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 2267,
+    "onVacation": false,
+    "registrationDate": "2010-02-23T15:58:29+0100",
+    "isSeller": true,
+    "legalInformation": "",
+    "unsentShipments": 5,
+    "shipsFast": 3,
+    "soldItems": 11648,
+    "avgShippingTime": 1,
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
+   },
+   "condition": "NM",
+   "isFoil": false,
+   "isSigned": false,
+   "isPlayset": false,
+   "isAltered": false,
+   "links": [
+    {
+     "rel": "buy",
+     "href": "shoppingcart",
+     "method": "PUT",
+     "action": "add",
+     "idArticle": 63951569
+    }
+   ]
+  },
+  {
+   "idArticle": 261237961,
+   "idProduct": 27,
+   "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+   },
+   "comments": "",
+   "price": 0.1,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
    "count": 2,
    "inShoppingCart": false,
-   "priceEUR": 0.05,
-   "priceGBP": 0.05,
+   "prices": [
+    {
+     "price": 0.1,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.1,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
    "seller": {
     "idUser": 0,
     "username": "",
-    "registrationDate": "2018-03-31T08:39:30+0200",
     "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 1246,
+    "onVacation": false,
+    "registrationDate": "2013-04-26T10:53:34+0200",
     "isSeller": true,
     "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 3,
+    "soldItems": 6673,
+    "avgShippingTime": 1,
     "riskGroup": 0,
     "lossPercentage": "0 - 2%",
-    "unsentShipments": 0,
-    "reputation": 1,
-    "shipsFast": 3,
-    "sellCount": 2274,
-    "soldItems": 18397,
-    "avgShippingTime": 1,
-    "onVacation": false
+    "address": {
+     "country": "D"
+    }
    },
-   "condition": "EX",
+   "condition": "NM",
    "isFoil": false,
    "isSigned": false,
    "isPlayset": false,
@@ -581,41 +776,56 @@
      "href": "shoppingcart",
      "method": "PUT",
      "action": "add",
-     "idArticle": "350801894"
+     "idArticle": 261237961
     }
    ]
   },
   {
-   "idArticle": 194226878,
+   "idArticle": 388438175,
    "idProduct": 27,
    "language": {
     "idLanguage": 3,
     "languageName": "German"
    },
-   "comments": "no shipment to \"non-seller members\"",
-   "price": 0.05,
+   "comments": "",
+   "price": 0.1,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
    "count": 1,
    "inShoppingCart": false,
-   "priceEUR": 0.05,
-   "priceGBP": 0.05,
+   "prices": [
+    {
+     "price": 0.1,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.1,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
    "seller": {
     "idUser": 0,
     "username": "",
-    "registrationDate": "2008-09-29T16:37:41+0200",
     "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 618,
+    "onVacation": false,
+    "registrationDate": "2013-09-20T21:45:59+0200",
     "isSeller": true,
     "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 5,
+    "soldItems": 3171,
+    "avgShippingTime": 1,
     "riskGroup": 0,
     "lossPercentage": "0 - 2%",
-    "unsentShipments": 1,
-    "reputation": 1,
-    "shipsFast": 6,
-    "sellCount": 1402,
-    "soldItems": 6515,
-    "avgShippingTime": 2,
-    "onVacation": false
+    "address": {
+     "country": "D"
+    }
    },
-   "condition": "EX",
+   "condition": "NM",
    "isFoil": false,
    "isSigned": false,
    "isPlayset": false,
@@ -626,7 +836,127 @@
      "href": "shoppingcart",
      "method": "PUT",
      "action": "add",
-     "idArticle": "194226878"
+     "idArticle": 388438175
+    }
+   ]
+  },
+  {
+   "idArticle": 579238406,
+   "idProduct": 27,
+   "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+   },
+   "comments": "",
+   "price": 0.1,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
+   "count": 1,
+   "inShoppingCart": false,
+   "prices": [
+    {
+     "price": 0.1,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.1,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
+   "seller": {
+    "idUser": 0,
+    "username": "",
+    "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 588,
+    "onVacation": false,
+    "registrationDate": "2010-01-24T17:10:05+0100",
+    "isSeller": true,
+    "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 3,
+    "soldItems": 2830,
+    "avgShippingTime": 1,
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
+   },
+   "condition": "NM",
+   "isFoil": false,
+   "isSigned": false,
+   "isPlayset": false,
+   "isAltered": false,
+   "links": [
+    {
+     "rel": "buy",
+     "href": "shoppingcart",
+     "method": "PUT",
+     "action": "add",
+     "idArticle": 579238406
+    }
+   ]
+  },
+  {
+   "idArticle": 233832711,
+   "idProduct": 27,
+   "language": {
+    "idLanguage": 3,
+    "languageName": "German"
+   },
+   "comments": "",
+   "price": 0.1,
+   "idCurrency": 1,
+   "currencyCode": "EUR",
+   "count": 1,
+   "inShoppingCart": false,
+   "prices": [
+    {
+     "price": 0.1,
+     "idCurrency": 1,
+     "currencyCode": "EUR"
+    },
+    {
+     "price": 0.1,
+     "idCurrency": 2,
+     "currencyCode": "GBP"
+    }
+   ],
+   "seller": {
+    "idUser": 0,
+    "username": "",
+    "isCommercial": 0,
+    "reputation": 1,
+    "sellCount": 325,
+    "onVacation": false,
+    "registrationDate": "2011-10-10T20:14:19+0200",
+    "isSeller": true,
+    "legalInformation": "",
+    "unsentShipments": 0,
+    "shipsFast": 4,
+    "soldItems": 2084,
+    "avgShippingTime": 1,
+    "riskGroup": 0,
+    "lossPercentage": "0 - 2%",
+    "address": {
+     "country": "D"
+    }
+   },
+   "condition": "NM",
+   "isFoil": false,
+   "isSigned": false,
+   "isPlayset": false,
+   "isAltered": false,
+   "links": [
+    {
+     "rel": "buy",
+     "href": "shoppingcart",
+     "method": "PUT",
+     "action": "add",
+     "idArticle": 233832711
     }
    ]
   }
@@ -634,7 +964,7 @@
  "links": [
   {
    "rel": "self",
-   "href": "/articles/27?start=0&maxResults=20&idLanguage=3&minUserScore=1&minCondition=EX&isFoil=false&isSigned=false&isAltered=false",
+   "href": "/articles/27?start=0&maxResults=20&idLanguage=3&minUserScore=1&minCondition=NM&isFoil=True&isSigned=false&isAltered=false",
    "method": "GET"
   },
   {

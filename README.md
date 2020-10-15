@@ -41,7 +41,7 @@ You should install them using pip3.
 * Go to https://www.cardmarket.com/en/Magic/Account/API and register your account for a dedicated app.
 * Copy the information to a file called ```confidential_config.json``` in the folder data, follow the template given below:
 
-```json
+```
 {
   "account": {
     "user_name": "YourNameHere",
@@ -63,7 +63,7 @@ You should install them using pip3.
 All data that determine the algorithm and CmBoys behavior is specified in the ```config.json``` in the folder ```data```.
 The section ```"urls"``` should only be changed if the API address ever changes.
 The section ```"product_default_params"``` can be modified as written in comments ```//``` after each line:
-```json
+```
 "product_default_params": {
     "start": 0,         // Increase this to get rid of the very lowest offers.
     "maxResults": 200,  // Increase if you get warnings that you don't have enough data. Max 1000, but the bigger the slower the algorithm.
@@ -71,13 +71,13 @@ The section ```"product_default_params"``` can be modified as written in comment
   }
 ```
 The section ```listing_static_filter``` filters the received listings.
-```json
+```
 "listing_static_filter": {
     "seller_country": "D"   // Change this to filter for other seller locations. 
   }
 ```
 The section ```algo_parameter``` changes the behavior of the algorithm.
-```json
+```
 "algo_parameter":
   {
     "Mythic": {             // This is the entry for mythic rare cards. The others have the same entries and work the same

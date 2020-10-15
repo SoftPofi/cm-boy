@@ -42,6 +42,7 @@ class CmBoy:
         self.cm_bark.get_stock()
         success, reason, self.card_inventory = self.cm_client.get_account_stock()
         if success:
+            self.cm_filter.stock_filter(self.card_inventory)
             self.cm_bark.stock_statistics(self.card_inventory)
         else:
             raise ValueError("Could not get card inventory! Reason: {}".format(reason))

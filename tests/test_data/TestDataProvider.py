@@ -44,10 +44,7 @@ class TestDataProvider:
                     continue
                 try:
                     for entry in to_anonymize["article"]:
-                        try:
-                            self._remove_sensitive_entries(entry)
-                        except Exception as exc:
-                            continue
+                        self._remove_sensitive_entries(entry)
                 except Exception as exc:
                     continue
 
@@ -55,13 +52,36 @@ class TestDataProvider:
                     json.dump(to_anonymize, anonymized_file, indent=1)
 
     def _remove_sensitive_entries(self, entry):
-        entry["seller"]["idUser"] = 0
-        entry["seller"]["username"] = ""
-        del entry["seller"]["name"]
-        del entry["seller"]["address"]
-        del entry["seller"]["phone"]
-        del entry["seller"]["email"]
-        del entry["seller"]["vat"]
+        try:
+            entry["seller"]["idUser"] = 0
+        except:
+            pass
+        try:
+            entry["seller"]["username"] = ""
+        except:
+            pass
+        try:
+            del entry["seller"]["name"]
+        except:
+            pass
+        try:
+            country = entry["seller"]["address"]["country"]
+            del entry["seller"]["address"]
+            entry["seller"].update({"address": {"country": country}})# keep country
+        except:
+            pass
+        try:
+            del entry["seller"]["phone"]
+        except:
+            pass
+        try:
+            del entry["seller"]["email"]
+        except:
+            pass
+        try:
+            del entry["seller"]["vat"]
+        except:
+            pass
 
 
 if __name__ == "__main__":
