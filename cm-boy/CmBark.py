@@ -20,11 +20,6 @@ class CmBark:
         self.card_total = len(card_inventory["article"])
         self._cm_print("Received stock of {} cards".format(self.card_total))
 
-    def _cm_print(self, printout_str, end="\n", flush=False):
-        timestamp = datetime.now()
-        if not self.quiet:
-            print("{}: {}".format(timestamp, printout_str), end=end, flush=flush)
-
     def start_chew(self):
         self.card_count = 0
         self._cm_print("Start processing cards")
@@ -45,16 +40,14 @@ class CmBark:
             card["card"]["isPlayset"]
         )
         value_color = "\033[32m" if card["card"]["price"] >= card["old_price"] else "\033[31m"
-        printout_str = "Card [{}]: {}{:.02f} \033[m | old: {:.02f} new: {:.02f}\n\t\t{}".format(
+        printout_str = "Card [{}]:\t{}{:.02f} \033[m | old: {:.02f} new: {:.02f}\n\t\t\t\t{}\n".format(
             card["card"]["product"]["enName"],
             value_color,
             card["card"]["price"] - card["old_price"],
             card["old_price"],
             card["card"]["price"],
             card_info)
-        timestamp = datetime.now()
-        if not self.quiet:
-            print("{}: {}".format(timestamp, printout_str))
+        self._cm_print(printout_str)
 
     def get_stock(self):
         self._cm_print("Fetching stock...")
@@ -72,3 +65,8 @@ class CmBark:
         self._cm_print("Starting upload process for {} cards".format(len(list_of_cards_with_changed_prices)))
         if dryrun:
             self.print_error("Dryrun specified, will not upload anything.")
+
+    def _cm_print(self, printout_str, end="\n", flush=False):
+        timestamp = datetime.now()
+        if not self.quiet:
+            print("{}: {}".format(timestamp, printout_str), end=end, flush=flush)
