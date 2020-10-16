@@ -61,7 +61,7 @@ class CmBoy:
     def chew(self):
         self.cm_bark.start_chew()
         for card in self.card_inventory["article"]:
-            parameter = self.cm_algo.parameter_for_card(card)
+            parameter = self.cm_algo._parameter_for_card(card)
             success, reason, listing = self.cm_client.get_card_listing(card["idProduct"], user_params=parameter)
             if success:
                 self.cm_bark.update_current_card(card)

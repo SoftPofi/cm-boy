@@ -40,7 +40,7 @@ class CmBark:
             card["card"]["isPlayset"]
         )
         value_color = "\033[32m" if card["card"]["price"] >= card["old_price"] else "\033[31m"
-        printout_str = "Card [{}]:\t{}{:.02f} \033[m | old: {:.02f} new: {:.02f}\n\t\t\t\t{}\n".format(
+        printout_str = "Card [{}]:{}{:.02f} \033[m | old: {:.02f} new: {:.02f}\n\t\t\t\t{}\n".format(
             card["card"]["product"]["enName"],
             value_color,
             card["card"]["price"] - card["old_price"],
