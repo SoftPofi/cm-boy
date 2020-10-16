@@ -14,9 +14,9 @@ class test_CmAlgo(TestCase):
         self.test_card = TestDataProvider().provide_example_card_id_27()
         self.uut = CmAlgo(self.config, self.confidential_config)
 
-    def test_get_target_element(self):
-        result = self.uut.is_position_in_range(self.test_card,self.test_listing)
-        self.assertFalse(result)
+    def test_card_in_range(self):
+        result = self.uut.is_position_in_range(self.test_card, self.test_listing)
+        self.assertTrue(result)
 
     def test_card_already_min(self):
         result = self.uut.is_price_of_card_already_min(self.test_card)
@@ -25,4 +25,4 @@ class test_CmAlgo(TestCase):
     def test_patch_price_of_target_offer(self):
         result = self.uut.match_price_of_target_offer(self.test_card, self.test_listing)
         self.assertTrue(result)
-        self.assertEqual(self.test_card["price"], 0.04)
+        self.assertEqual(self.test_card["price"], 0.15)
