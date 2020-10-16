@@ -10,6 +10,17 @@ from CmFilter import CmFilter
 from CmSession import CmSession
 
 
+def main():
+    """
+    get a good boy that first gets your account data, gets your stock processes each card and uploads the cards that have a new price.
+    """
+    good_cm_boy = CmBoy()
+    good_cm_boy.come()
+    good_cm_boy.fetch()
+    good_cm_boy.chew()
+    good_cm_boy.put()
+
+
 class CmBoy:
 
     def __init__(self):
@@ -54,8 +65,8 @@ class CmBoy:
             success, reason, listing = self.cm_client.get_card_listing(card["idProduct"], user_params=parameter)
             if success:
                 self.cm_bark.update_current_card(card)
-                filtered_listing = self.cm_filter.prefilter(listing, card)
-                self.cm_algo.adjust_price(card, filtered_listing, listing)
+                self.cm_filter.prefilter(listing, card)
+                self.cm_algo.adjust_price(card, listing)
             else:
                 self.cm_bark.print_error("Could not get listings for card {}! Reason: {}".format(card["product"]["enName"], reason))
         self.cm_bark.end_chew_message()
@@ -78,8 +89,4 @@ class CmBoy:
 
 
 if __name__ == "__main__":
-    good_cm_boy = CmBoy()
-    good_cm_boy.come()
-    good_cm_boy.fetch()
-    good_cm_boy.chew()
-    good_cm_boy.put()
+    main()
