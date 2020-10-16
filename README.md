@@ -11,6 +11,7 @@
 - [7. The Algorithm](#7-the-algorithm)
     - [7.1. Approach and reasoning](#71-approach-and-reasoning)
     - [7.2. How this algorithm works](#72-how-this-algorithm-works)
+    - [7.3. Ignore specific listing](#73-ignore-specific-listing)
 - [8. Disclaimer](#8-disclaimer)
 
 <!-- /TOC -->
@@ -62,21 +63,24 @@ You should install them using pip3.
 
 All data that determine the algorithm and CmBoys behavior is specified in the ```config.json``` in the folder ```data```.
 The section ```"urls"``` should only be changed if the API address ever changes.
-The section ```"product_default_params"``` can be modified as written in comments ```//``` after each line:
+The section ```"product_default_params"``` can be modified as written in comments ```//``` after each line. Remove those comment lines in your final .json file, since those comments are illegal in json files.
+
 ```
 "product_default_params": {
     "start": 0,         // Increase this to get rid of the very lowest offers.
     "maxResults": 200,  // Increase if you get warnings that you don't have enough data. Max 1000, but the bigger the slower the algorithm.
-    "minUserScore": 1   // Change this if you also want to consider users that have a very low score
+    "minUserScore": 1   // Change this if you also want to consider users that have a low score
   }
 ```
-The section ```listing_static_filter``` filters the received listings.
+The section ```listing_static_filter``` filters the received listings. So far in this section there is nothing to adjust, since this is done by the CmBoy.
+
 ```
 "listing_static_filter": {
-    "seller_country": "D"   // Change this to filter for other seller locations. 
+    "seller_country": "D"   // This is automatically set no need to change anything
   }
 ```
 The section ```algo_parameter``` changes the behavior of the algorithm.
+
 ```
 "algo_parameter":
   {
@@ -108,10 +112,14 @@ It can currently do the following:
 * Get the stock of the specified user
 * Apply the algorithm explained in this document
 * Upload the adjusted prices, unless specified at program call with the dry run option
+* Ignore listings that have the designated pattern in their comments (see later)
 
-It was not tested to do the following:
+It currently can **not** do the following:
+* Adjust prices for things that are not Magic: the Gathering single cards. So for example accessories, sealed product or listings in the "lots" section are not supported. Please mark those with the ignore pattern in the listing's comment.
 
-* Handle products other than Magic: the Gathering single cards. So it was not tested to adjust prices for other games or products such as sealed products or accessories.
+It was **not** tested to do the following:
+
+* Handle other games than Magic: the Gathering, so it was not tested to adjust prices for other games (Yugioh, ...).
 
 # 6. How to use CmBoy
 
@@ -140,13 +148,22 @@ This Flow chart shows how it works:
 If you prefer words and some info left from above graph:
 
 0. Get card stock of user and do the algo for each card in stock
-1. Check if the current card is already in range. Yes? Done No? Continue.
-1. Filter listing to narrow down more comparable offers
-1. Try to match price with the card currently at target position.
-    1. Handle cornercases of too short listings
-    1. If the price would be below the minimal price specified, use the minimal price instead
-    1. Note if card price actually changed
-1. If card price was adjusted, upload (this is not done if ```--dryrun is specified```)
+1. Check if the current card is already in range. Yes? Done. No? Continue.
+1. Get card price of card in target position (so e.g. price of card on position 10)
+1. Is target price lower or equal to minimum price for card? 
+    a) Yes: Is my card already at minimum price? If so done, if not, Set it to min price for that category.
+    b) No: So the card is above min price for that category. Has your card the same position as target card (this could be if a lot of listings have the same price and a better selling score than you). If that's the case, there is nothing you can do (except for undercut everyone, which usually is not worth it). In the other case, your card is matched to the market price.
+
+If the card price was adjusted, the card is added to the list of cards that will be uploaded (this is not done if ```--dryrun is specified```).
+
+## 7.3. Ignore specific listing
+
+To ignore a specific listing add ```|#00``` anywhere in the listing's comment. It doesn't matter if it's in the beginning or the end or somewhere in the middle of the sentence of the comment. So for example a comment that makes the listing be ignored by cm-boy is: ```Card has a little scratch, see picture. |#00```
+
+This is useful if:
+* You have a listing not supported by cm-boy, so for example accessories, sealed product or anything but Magic: The Gathering single cards.
+* You don't want a certain card to be price adjusted by the cm-boy
+
 
 # 8. Disclaimer
 
