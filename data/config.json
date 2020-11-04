@@ -29,9 +29,9 @@
       },
       "position_foil":
       {
-        "target": 2,
+        "target": 3,
         "min": 2,
-        "max": 4
+        "max": 5
       }
     },
     "Rare": {
@@ -49,9 +49,9 @@
       },
       "position_foil":
       {
-        "target": 2,
+        "target": 3,
         "min": 2,
-        "max": 4
+        "max": 5
       }
     },
     "Uncommon": {
@@ -69,9 +69,9 @@
       },
       "position_foil":
       {
-        "target": 2,
+        "target": 3,
         "min": 2,
-        "max": 4
+        "max": 5
       }
     },
     "Common": {
@@ -109,7 +109,7 @@
       },
       "position_foil":
       {
-        "target": 2,
+        "target": 3,
         "min": 2,
         "max": 6
       }
