@@ -1,0 +1,30 @@
+{
+  "idArticle": 616007194,
+  "idProduct": 377181,
+  "language": {
+    "idLanguage": 1,
+    "languageName": "English"
+  },
+  "comments": "",
+  "price": 0.04,
+  "count": 2,
+  "inShoppingCart": false,
+  "priceEUR": 0.04,
+  "priceGBP": 0.04,
+  "product": {
+    "idGame": 1,
+    "enName": "Chandra, Novice Pyromancer",
+    "locName": "Chandra, Novice Pyromancer",
+    "image": "//static.cardmarket.com/img/6096702d004d263bb0b1700d27de6049/items/1/M20/377181.jpg",
+    "expansion": "Core 2020",
+    "nr": "128",
+    "expIcon": 505,
+    "rarity": "Uncommon"
+  },
+  "lastEdited": "2020-01-23T13:07:33+0100",
+  "condition": "NM",
+  "isFoil": false,
+  "isSigned": false,
+  "isPlayset": false,
+  "isAltered": false
+}

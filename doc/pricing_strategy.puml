@@ -1,0 +1,21 @@
+@startuml
+
+skinparam ArrowMessageAlignment left
+
+state is_price_lower_than_min <<choice>>
+state is_card_already_min <<choice>>
+state is_position_in_range_min_max <<choice>> 
+state price_changed <<choice>> 
+
+[*] --> is_position_in_range_min_max: is my position in range
+is_position_in_range_min_max --> get_price_of_target_position_in_listing
+get_price_of_target_position_in_listing --> is_price_lower_than_min: Is target Price lower or equal to min price for card type?
+is_price_lower_than_min --> is_card_already_min: Yes\n Is my card already min price for that category?
+is_card_already_min --> [*]: Yes
+is_card_already_min --> upload_price_change: No, set card price to min
+
+is_position_in_range_min_max --> [*]: Yes
+
+price_changed --> upload_price_change: Yes
+upload_price_change -> [*]
+@enduml

@@ -36,7 +36,3 @@ class CmSession:
         url = self.generate_full_url(url, url_ext=url_ext)
         self._update_client_session_url(url)
         return self.api_client.put(url, data=body)
-
-
-if __name__ == "__main__":
-    pass
