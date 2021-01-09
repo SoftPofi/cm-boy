@@ -18,6 +18,7 @@ class CmAlgo:
         else:
             self.cm_bark = CmBark(args.quiet)
         self.list_of_cards_with_changed_prices = []
+        self.args = args
 
     def adjust_price(self, card, listing):
         if not self.is_position_in_range(card, listing):
@@ -26,6 +27,8 @@ class CmAlgo:
                 self.list_of_cards_with_changed_prices.append({"card": card, "old_price": old_card_price})
 
     def is_position_in_range(self, card, listings):
+        if self.args.forcePriceSet:
+            return False  # Pretend Card is not in acceptable range to force set it
         my_position = self._get_position_in_list(card, listings)
         if self._get_min_pos_of_card(card) <= my_position <= self._get_max_pos_of_card(card):
             return True
@@ -117,7 +120,7 @@ class CmAlgo:
         if target_position > len(listing["article"]):
             self.cm_bark.print_error("W: Not enough Listings ({}) for card {}, will work with limited data. Maybe increase requested listings, or unique position!".format(len(listing["article"]), card["product"]["enName"]))
             target_position = len(listing["article"])
-        return True, target_position - 1    # -1 to make position to list index
+        return True, target_position - 1  # -1 to make position to list index
 
     def _parameter_for_card(self, card):
         ret_dict = {}

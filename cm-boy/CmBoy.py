@@ -61,10 +61,10 @@ class CmBoy:
     def chew(self):
         self.cm_bark.start_chew()
         for card in self.card_inventory["article"]:
+            self.cm_bark.update_current_card(card)
             parameter = self.cm_algo._parameter_for_card(card)
             success, reason, listing = self.cm_client.get_card_listing(card["idProduct"], user_params=parameter)
             if success:
-                self.cm_bark.update_current_card(card)
                 self.cm_filter.prefilter(listing, card)
                 self.cm_algo.adjust_price(card, listing)
             else:
@@ -85,6 +85,7 @@ class CmBoy:
     def _setup_parser(self):
         self.parser.add_argument("--dryrun", action="store_true", help="Do NOT upload the cards with adjusted prices.")
         self.parser.add_argument("--quiet", action="store_true", help="Disable all output to the command line.")
+        self.parser.add_argument("--forcePriceSet", action="store_true", help="Regardless of the current position, update the prices.")
         self.args = self.parser.parse_args()
 
 

@@ -23,7 +23,7 @@
       },
       "position":
       {
-        "target": 5,
+        "target": 4,
         "min": 3,
         "max": 7
       },
@@ -43,7 +43,7 @@
       },
       "position":
       {
-        "target": 5,
+        "target": 4,
         "min": 3,
         "max": 7
       },
@@ -63,13 +63,13 @@
       },
       "position":
       {
-        "target": 4,
+        "target": 3,
         "min": 3,
-        "max": 10
+        "max": 7
       },
       "position_foil":
       {
-        "target": 3,
+        "target": 2,
         "min": 2,
         "max": 5
       }
@@ -83,15 +83,15 @@
       },
       "position":
       {
-        "target": 4,
+        "target": 3,
         "min": 3,
-        "max": 20
+        "max": 9
       },
       "position_foil":
       {
         "target": 2,
         "min": 2,
-        "max": 6
+        "max": 4
       }
     },
     "Land": {
@@ -103,9 +103,9 @@
       },
       "position":
       {
-        "target": 4,
+        "target": 3,
         "min": 3,
-        "max": 20
+        "max": 10
       },
       "position_foil":
       {
@@ -125,7 +125,7 @@
       {
         "target": 1,
         "min": 1,
-        "max": 20
+        "max": 7
       },
       "position_foil":
       {
@@ -145,7 +145,7 @@
       {
         "target": 1,
         "min": 1,
-        "max": 20
+        "max": 7
       },
       "position_foil":
       {
