@@ -23,13 +23,13 @@
       },
       "position":
       {
-        "target": 4,
-        "min": 3,
+        "target": 3,
+        "min": 2,
         "max": 7
       },
       "position_foil":
       {
-        "target": 3,
+        "target": 2,
         "min": 2,
         "max": 5
       }
@@ -43,13 +43,13 @@
       },
       "position":
       {
-        "target": 4,
-        "min": 3,
+        "target": 3,
+        "min": 2,
         "max": 7
       },
       "position_foil":
       {
-        "target": 3,
+        "target": 2,
         "min": 2,
         "max": 5
       }
@@ -64,7 +64,7 @@
       "position":
       {
         "target": 3,
-        "min": 3,
+        "min": 2,
         "max": 7
       },
       "position_foil":
@@ -155,6 +155,27 @@
       }
     },
     "Arena Code Card": {
+      "min_price":
+      {
+        "normal": 0.5,
+        "playset": 3.50,
+        "foil": 1.00
+      },
+      "position":
+      {
+        "target": 2,
+        "min": 1,
+        "max": 6
+      },
+      "position_foil":
+      {
+        "target": 2,
+        "min": 2,
+        "max": 6
+      }
+    },
+
+    "Code Card": {
       "min_price":
       {
         "normal": 0.5,

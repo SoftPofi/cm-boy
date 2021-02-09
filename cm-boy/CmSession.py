@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from requests_oauthlib import OAuth1Session
-
+import time
 
 class CmSession:
 
@@ -27,12 +27,26 @@ class CmSession:
                                         realm=url
                                         )
 
-    def get_data(self, url=None, url_ext=None, params=None):
+    def get_data(self, url=None, url_ext=None, params=None, retries=3, timeout=30):
+        resp = None
         url = self.generate_full_url(url, url_ext)
         self._update_client_session_url(url)
-        return self.api_client.get(url, params=params)
+        for no_retries in range(0, retries):
+            resp = self.api_client.get(url, params=params)
+            if resp.status_code in [200, 206]:
+                return resp
+            else:
+                time.sleep(timeout)
+        return resp
 
-    def put_data(self, body=None, url=None, url_ext=None, params=None):
+    def put_data(self, body=None, url=None, url_ext=None, params=None, retries=3, timeout=30):
+        resp = None
         url = self.generate_full_url(url, url_ext=url_ext)
         self._update_client_session_url(url)
-        return self.api_client.put(url, data=body)
+        for no_retries in range(0, retries):
+            resp = self.api_client.put(url, data=body)
+            if resp.status_code in [200, 206]:
+                return resp
+            else:
+                time.sleep(timeout)
+        return resp
