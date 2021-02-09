@@ -2,6 +2,7 @@
 
 import json
 import argparse
+import os
 
 from CmAlgo import CmAlgo
 from CmBark import CmBark
@@ -26,15 +27,13 @@ class CmBoy:
     def __init__(self):
         with open("../data/config.json", "r") as json_config:
             self.config = json.load(json_config)
-        with open("../data/confidential_config.json", "r") as json_confidential_config:
-            self.confidential_config = json.load(json_confidential_config)
         self.parser = argparse.ArgumentParser(description='This Boy handles all the cardmarket stuff, good boy!')
         self._setup_parser()
 
-        self.cm_client = CmClient(self.config, self.confidential_config)
+        self.cm_client = CmClient(self.config)
         self.cm_filter = CmFilter(self.config)
-        self.cm_session = CmSession(self.config["urls"]["base_url"], self.confidential_config)
-        self.cm_algo = CmAlgo(self.config, self.confidential_config, self.args)
+        self.cm_session = CmSession(self.config["urls"]["base_url"])
+        self.cm_algo = CmAlgo(self.config, self.args)
         self.cm_bark = CmBark(self.args.quiet)
 
         self.card_inventory = {}
@@ -42,9 +41,9 @@ class CmBoy:
     def come(self):
         success, reason, account_data = self.cm_client.get_account_data()
         if success:
-            self.cm_bark.come(account_data["account"]["username"])
-            self.confidential_config["user_name"] = account_data["account"]["username"]
-            self.confidential_config["sellCount"] = account_data["account"]["sellCount"]
+            self.username = account_data["account"]["username"]
+            self.sell_count = account_data["account"]["sellCount"]
+            self.cm_bark.come(self.username )
             self.config["listing_static_filter"]["seller_country"] = account_data["account"]["country"]
         else:
             raise ValueError("Could not get account data! Reason: {}".format(reason))
@@ -66,7 +65,7 @@ class CmBoy:
             success, reason, listing = self.cm_client.get_card_listing(card["idProduct"], user_params=parameter)
             if success:
                 self.cm_filter.prefilter(listing, card)
-                self.cm_algo.adjust_price(card, listing)
+                self.cm_algo.adjust_price(card, listing, self.sell_count, self.username)
             else:
                 self.cm_bark.print_error("Could not get listings for card {}! Reason: {}".format(card["product"]["enName"], reason))
         self.cm_bark.end_chew_message()

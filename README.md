@@ -40,24 +40,15 @@ You should install them using pip3.
 
 * You must set up your account to have API access.
 * Go to https://www.cardmarket.com/en/Magic/Account/API and register your account for a dedicated app.
-* Copy the information to a file called ```confidential_config.json``` in the folder data, follow the template given below:
+* You must set the confidential information as environment variables on your host. On Windows this can be done using the [SETX](https://docs.microsoft.com/de-de/windows-server/administration/windows-commands/setx), on Linux use [export](https://unix.stackexchange.com/questions/56444/how-do-i-set-an-environment-variable-on-the-command-line-and-have-it-appear-in-c) command. Set the variables as follows:
+  * ```cm_user_name```
+  * ```cm_app_name``` (optional)
+  * ```cm_app_type``` (optional)
+  * ```cm_app_token```
+  * ```cm_app_secret```
+  * ```access_token```
+  * ```access_secret```
 
-```
-{
-  "account": {
-    "user_name": "YourNameHere",
-    "sellCount": 0
-  },
-  "cm_access": {
-    "app_name": "cm_bot",
-    "app_type": "Dedicated",
-    "app_token": "0123456789ABCDEF",
-    "app_secret": "0123456789ABCDEF0123456789ABCDEF",
-    "access_token": "0123456789ABCDEF0123456789ABCDEF",
-    "access_secret": "0123456789ABCDEF0123456789ABCDEF"
-  }
-}
-```
 
 ## 4.2. Modify the algorithm
 
@@ -151,7 +142,7 @@ If you prefer words and some info left from above graph:
 1. Check if the current card is already in range. Yes? Done. No? Continue.
 1. Get card price of card in target position (so e.g. price of card on position 10)
 1. Is target price lower or equal to minimum price for card? 
-    a) Yes: Is my card already at minimum price? If so done, if not, Set it to min price for that category.
+    a) Yes: Is my card already at minimum price? If so done, if not, set it to min price for that category.
     b) No: So the card is above min price for that category. Has your card the same position as target card (this could be if a lot of listings have the same price and a better selling score than you). If that's the case, there is nothing you can do (except for undercut everyone, which usually is not worth it). In the other case, your card is matched to the market price.
 
 If the card price was adjusted, the card is added to the list of cards that will be uploaded (this is not done if ```--dryrun is specified```).

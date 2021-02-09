@@ -12,23 +12,19 @@ class CmClient:
     Class that interacts with CM API
     """
 
-    def __init__(self, config_data, confidential_config):
+    def __init__(self, config_data):
         if config_data is None:
             raise ValueError("No config given!")
         else:
             self.config = config_data
-        if confidential_config is None:
-            raise ValueError("No confidential config given!")
-        else:
-            self.confidential_config = confidential_config
-        self.cm_session = CmSession(self.config["urls"]["base_url"], self.confidential_config)
+        self.cm_session = CmSession(self.config["urls"]["base_url"])
 
-    def get_account_articles(self):
+    def get_account_articles(self, username):
         """
         Get all articles. This is not for getting the cards, but for also getting all the other articles one could sell on cm
         :return:
         """
-        url_ext = "/users/{}/articles".format(self.confidential_config["account"]["user_name"])
+        url_ext = "/users/{}/articles".format(username)
         response = self.cm_session.get_data(url_ext=url_ext)
         return self._response_ok(response), response.reason, self._response_content_to_json(response)
 
