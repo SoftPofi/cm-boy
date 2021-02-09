@@ -2,7 +2,6 @@
 
 import json
 import argparse
-import os
 
 from CmAlgo import CmAlgo
 from CmBark import CmBark
