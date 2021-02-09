@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import os
-
 from requests_oauthlib import OAuth1Session
 import time
+
 
 class CmSession:
 

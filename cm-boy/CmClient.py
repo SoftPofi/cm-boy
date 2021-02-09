@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 
-
 import json
 from dicttoxml import dicttoxml
-
 from CmSession import CmSession
-
 
 class CmClient:
     """

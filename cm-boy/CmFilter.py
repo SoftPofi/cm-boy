@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from copy import deepcopy
 
 
 class CmFilter:
@@ -43,4 +42,3 @@ class CmFilter:
                 offers_to_remove.append(item)
         for offer in offers_to_remove:
             card_inventory["article"].remove(offer)
-

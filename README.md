@@ -1,3 +1,6 @@
+
+[![SoftPofi](https://circleci.com/gh/SoftPofi/cm-boy.svg?style=shield)](https://circleci.com/gh/SoftPofi/cm-boy)
+
 <!-- TOC -->
 
 - [1. cm-boy](#1-cm-boy)

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from CmBark import CmBark
-import os
 
 
 class CmAlgo:
