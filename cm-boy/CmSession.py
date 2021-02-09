@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
+import os
 
 from requests_oauthlib import OAuth1Session
 import time
 
 class CmSession:
 
-    def __init__(self, base_url, confidential_config):
+    def __init__(self, base_url):
         self.api_client = None
         self.base_url = base_url
-        self.confidential_config = confidential_config
 
     def generate_full_url(self, url, url_ext):
         if url is None:
@@ -20,10 +20,10 @@ class CmSession:
 
     def _update_client_session_url(self, url=None, url_ext=None, ):
         url = self.generate_full_url(url, url_ext)
-        self.api_client = OAuth1Session(self.confidential_config["cm_access"]["app_token"],
-                                        client_secret=self.confidential_config["cm_access"]["app_secret"],
-                                        resource_owner_key=self.confidential_config["cm_access"]["access_token"],
-                                        resource_owner_secret=self.confidential_config["cm_access"]["access_secret"],
+        self.api_client = OAuth1Session(os.environ["cm_app_token"],
+                                        client_secret=os.environ["cm_app_secret"],
+                                        resource_owner_key=os.environ["cm_access_token"],
+                                        resource_owner_secret=os.environ["cm_access_secret"],
                                         realm=url
                                         )
 

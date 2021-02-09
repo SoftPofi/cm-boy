@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 from CmBark import CmBark
+import os
 
 
 class CmAlgo:
 
-    def __init__(self, config, confidential_config, args=None):
+    def __init__(self, config, args=None):
         if config is not None:
             self.config = config
-        else:
-            raise ValueError("No config given")
-        if confidential_config is not None:
-            self.confidential_config = confidential_config
         else:
             raise ValueError("No config given")
         if args is None:
@@ -20,16 +17,16 @@ class CmAlgo:
         self.list_of_cards_with_changed_prices = []
         self.args = args
 
-    def adjust_price(self, card, listing):
-        if not self.is_position_in_range(card, listing):
+    def adjust_price(self, card, listing, sell_count, username):
+        if not self.is_position_in_range(card, listing, sell_count, username):
             old_card_price = card["price"]
             if self.match_price_of_target_offer(card, listing):
                 self.list_of_cards_with_changed_prices.append({"card": card, "old_price": old_card_price})
 
-    def is_position_in_range(self, card, listings):
+    def is_position_in_range(self, card, listings, sell_count, username):
         if self.args.forcePriceSet:
             return False  # Pretend Card is not in acceptable range to force set it
-        my_position = self._get_position_in_list(card, listings)
+        my_position = self._get_position_in_list(card, listings, sell_count, username)
         if self._get_min_pos_of_card(card) <= my_position <= self._get_max_pos_of_card(card):
             return True
         else:
@@ -75,28 +72,28 @@ class CmAlgo:
             position_characteristic = "position_foil"
         return self.config["algo_parameter"][card["product"]["rarity"]][position_characteristic]["target"]
 
-    def _get_position_in_list(self, card, listings):
+    def _get_position_in_list(self, card, listings, sell_count, username):
         my_position = 0
         for listed_card in listings["article"]:
             my_position = my_position + 1
-            if self._is_entry_my_own(listed_card):
+            if self._is_entry_my_own(listed_card, username):
                 return my_position
-            if self._found_entry_based_on_price_and_sellcount(card, listed_card):
+            if self._found_entry_based_on_price_and_sellcount(card, listed_card, sell_count):
                 return my_position
             else:
                 continue
         return -1  # position higher than length of listing
 
-    def _is_entry_my_own(self, listed_card):
-        return listed_card["seller"]["username"] == self.confidential_config["account"]["user_name"]
+    def _is_entry_my_own(self, listed_card, username):
+        return listed_card["seller"]["username"] == username
 
-    def _found_entry_based_on_price_and_sellcount(self, card, listed_card):
+    def _found_entry_based_on_price_and_sellcount(self, card, listed_card, sell_count):
         if listed_card["price"] < card["price"]:
             return False
         elif listed_card["price"] == card["price"]:
-            if listed_card["seller"]["sellCount"] <= self.confidential_config["account"]["sellCount"]:
+            if listed_card["seller"]["sellCount"] <= sell_count:
                 return True
-            else:  # listed_card["seller"]["sellCount"] > self.confidential_config["account"]["sellCount"]
+            else:  # listed_card["seller"]["sellCount"] > sell_count
                 return False
         else:  # listed_card["price"] > card["price"]
             return True
