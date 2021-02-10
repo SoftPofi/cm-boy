@@ -122,6 +122,7 @@ After you set up the python environment you can call it from the command line wi
 
 * ```--dryrun``` Give this optional argument to NOT update the cards. This can be useful if you first want to try out the program
 * ```--quiet``` Give this optional argument to disable all output to the command line. This could be useful if you want to use the CmBoy within another script and command line output interferes with that program
+* ```--forcePriceSet``` Give this optional argument to update prices regardless of current position. This usually results in more price updates per run and jumping of prices in between runs.
 
 # 7. The Algorithm
 

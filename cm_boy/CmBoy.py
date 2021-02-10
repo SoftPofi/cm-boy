@@ -3,11 +3,11 @@
 import json
 import argparse
 
-from CmAlgo import CmAlgo
-from CmBark import CmBark
-from CmClient import CmClient
-from CmFilter import CmFilter
-from CmSession import CmSession
+from cm_boy.CmAlgo import CmAlgo
+from cm_boy.CmBark import CmBark
+from cm_boy.CmClient import CmClient
+from cm_boy.CmFilter import CmFilter
+from cm_boy.CmSession import CmSession
 
 
 def main():
@@ -81,9 +81,9 @@ class CmBoy:
             self.cm_bark.price_update_statistic(card)
 
     def _setup_parser(self):
-        self.parser.add_argument("--dryrun", action="store_true", help="Do NOT upload the cards with adjusted prices.")
-        self.parser.add_argument("--quiet", action="store_true", help="Disable all output to the command line.")
-        self.parser.add_argument("--forcePriceSet", action="store_true", help="Regardless of the current position, update the prices.")
+        self.parser.add_argument("-d", "--dryrun", action="store_true", help="Do NOT upload the cards with adjusted prices.")
+        self.parser.add_argument("-q", "--quiet", action="store_true", help="Disable all output to the command line.")
+        self.parser.add_argument("-f", "--forcePriceSet", action="store_true", help="Regardless of the current position, update the prices.")
         self.args = self.parser.parse_args()
 
 

@@ -2,7 +2,8 @@
 
 import json
 from dicttoxml import dicttoxml
-from CmSession import CmSession
+from cm_boy.CmSession import CmSession
+
 
 class CmClient:
     """

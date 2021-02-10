@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from CmBark import CmBark
+from cm_boy.CmBark import CmBark
 
 
 class CmAlgo:
