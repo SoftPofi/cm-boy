@@ -9,28 +9,30 @@ class TestDataProvider:
         pass
 
     def provide_config(self):
-        if os.path.isfile("../data/config.json"):
-            filepath = "../data/config.json"
-        elif os.path.isfile("../../data/config.json"):
-            filepath = "../../data/config.json"
-        else:
-            filepath = "data/config.json"
+        dirname = os.path.dirname(__file__)
+        filepath = os.path.join(dirname, "../../data/config.json")
         with open(filepath, "r") as json_config:
             config = json.load(json_config)
         return config
 
     def provide_listing_id_27(self):
-        with open("test_data/listing_product_id_27_entries_20.json", "r") as json_listing:
+        dirname = os.path.dirname(__file__)
+        filepath = os.path.join(dirname, "listing_product_id_27_entries_20.json")
+        with open(filepath, "r") as json_listing:
             listing = json.load(json_listing)
         return listing
 
     def provide_filtered_listing_id_27(self):
-        with open("test_data/listing_product_id_27_filtered_entries_20.json", "r") as json_filtered_listing:
+        dirname = os.path.dirname(__file__)
+        filepath = os.path.join(dirname, "listing_product_id_27_filtered_entries_20.json")
+        with open(filepath, "r") as json_filtered_listing:
             filtered_listing = json.load(json_filtered_listing)
         return filtered_listing
 
     def provide_example_card_id_27(self):
-        with open("test_data/example_card_product_id_27.json", "r") as json_example_card:
+        dirname = os.path.dirname(__file__)
+        filepath = os.path.join(dirname, "example_card_product_id_27.json")
+        with open(filepath, "r") as json_example_card:
             example_card = json.load(json_example_card)
         return example_card
 
