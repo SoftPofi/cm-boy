@@ -12,7 +12,6 @@ class test_CmAlgo(TestCase):
 
     def setUp(self):
         self.config = TestDataProvider().provide_config()
-        self.confidential_config = TestDataProvider().provide_confidential_config()
         self.test_listing = TestDataProvider().provide_listing_id_27()
         self.test_card = TestDataProvider().provide_example_card_id_27()
         self.parser = argparse.ArgumentParser(description='This Boy handles all the cardmarket stuff, good boy!')

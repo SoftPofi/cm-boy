@@ -9,12 +9,13 @@ class TestDataProvider:
         pass
 
     def provide_config(self):
-        with open("../data/config.json", "r") as json_config:
-            config = json.load(json_config)
-        return config
-
-    def provide_confidential_config(self):
-        with open("../data/confidential_config.json", "r") as json_config:
+        if os.path.isfile("../data/config.json"):
+            filepath = "../data/config.json"
+        elif os.path.isfile("../../data/config.json"):
+            filepath = "../../data/config.json"
+        else:
+            filepath = "data/config.json"
+        with open(filepath, "r") as json_config:
             config = json.load(json_config)
         return config
 
