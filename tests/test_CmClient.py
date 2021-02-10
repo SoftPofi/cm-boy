@@ -1,6 +1,5 @@
 import os
 from unittest import TestCase
-
 from CmClient import CmClient
 from tests.test_data.TestDataProvider import TestDataProvider
 
