@@ -1,3 +1,4 @@
+import os
 from unittest import TestCase
 
 from CmClient import CmClient
@@ -8,11 +9,11 @@ class TestCmClient(TestCase):
 
     def setUp(self):
         test_data = TestDataProvider()
-        self.uut = CmClient(test_data.provide_config(), test_data.provide_confidential_config())
+        self.uut = CmClient(test_data.provide_config())
         self.product_id = 27
 
     def test_get_account_articles(self):
-        resp, _, _ = self.uut.get_account_articles()
+        resp, _, _ = self.uut.get_account_articles(os.environ["cm_user_name"])
         self.assertTrue(resp)
 
     def test_get_account_stock(self):

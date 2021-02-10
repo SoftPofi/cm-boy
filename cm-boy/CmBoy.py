@@ -81,9 +81,9 @@ class CmBoy:
             self.cm_bark.price_update_statistic(card)
 
     def _setup_parser(self):
-        self.parser.add_argument("--dryrun", action="store_true", help="Do NOT upload the cards with adjusted prices.")
-        self.parser.add_argument("--quiet", action="store_true", help="Disable all output to the command line.")
-        self.parser.add_argument("--forcePriceSet", action="store_true", help="Regardless of the current position, update the prices.")
+        self.parser.add_argument("-d", "--dryrun", action="store_true", help="Do NOT upload the cards with adjusted prices.")
+        self.parser.add_argument("-q", "--quiet", action="store_true", help="Disable all output to the command line.")
+        self.parser.add_argument("-f", "--forcePriceSet", action="store_true", help="Regardless of the current position, update the prices.")
         self.args = self.parser.parse_args()
 
 
