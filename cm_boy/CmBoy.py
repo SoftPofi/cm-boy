@@ -3,11 +3,11 @@
 import json
 import argparse
 
-from CmAlgo import CmAlgo
-from CmBark import CmBark
-from CmClient import CmClient
-from CmFilter import CmFilter
-from CmSession import CmSession
+from cm_boy.CmAlgo import CmAlgo
+from cm_boy.CmBark import CmBark
+from cm_boy.CmClient import CmClient
+from cm_boy.CmFilter import CmFilter
+from cm_boy.CmSession import CmSession
 
 
 def main():
