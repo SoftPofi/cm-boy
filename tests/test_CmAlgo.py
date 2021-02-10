@@ -4,7 +4,7 @@ import os
 
 from unittest import TestCase
 
-from CmAlgo import CmAlgo
+from cm_boy.CmAlgo import CmAlgo
 from tests.test_data.TestDataProvider import TestDataProvider
 
 

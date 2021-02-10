@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import json
-from CmFilter import CmFilter
 from unittest import TestCase
+
+from cm_boy.CmFilter import CmFilter
 from tests.test_data.TestDataProvider import TestDataProvider
 
 
