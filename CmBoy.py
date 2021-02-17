@@ -24,7 +24,7 @@ def main():
 class CmBoy:
 
     def __init__(self):
-        with open("../data/config.json", "r") as json_config:
+        with open("data/config.json", "r") as json_config:
             self.config = json.load(json_config)
         self.parser = argparse.ArgumentParser(description='This Boy handles all the cardmarket stuff, good boy!')
         self._setup_parser()
