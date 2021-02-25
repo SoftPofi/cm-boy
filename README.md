@@ -49,8 +49,8 @@ You should install them using pip3.
   * ```cm_app_type``` (optional)
   * ```cm_app_token```
   * ```cm_app_secret```
-  * ```access_token```
-  * ```access_secret```
+  * ```cm_access_token```
+  * ```cm_access_secret```
 
 
 ## 4.2. Modify the algorithm
