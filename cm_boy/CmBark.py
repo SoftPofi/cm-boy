@@ -1,14 +1,22 @@
 #!/usr/bin/env python3
-
+import os
 from datetime import datetime
 
 
 class CmBark:
 
-    def __init__(self, quiet):
+    def __init__(self, quiet, log_file_path):
         """
         The CM logging class
         """
+        self.log_file_path = log_file_path
+        self.log_file_name = "{}_log.log".format(str(datetime.now().strftime("%Y_%m_%d_%H_%M_%S")))
+        if self.log_file_path is not None:
+            if log_file_path == "":
+                self.log_file_path = "./"
+            else:
+                if not os.path.isdir(self.log_file_path):
+                    raise ValueError("Directory '{}' given is not an existing directory".format(self.log_file_path))
         self.quiet = quiet
         self.card_count = 0
         self.card_total = 0
@@ -54,8 +62,12 @@ class CmBark:
 
     def print_error(self, err_str):
         timestamp = datetime.now()
+        printout_str = "\n\033[31m{}: {}\033[m".format(timestamp, err_str)
         if not self.quiet:
-            print("\n\033[31m{}: {}\033[m".format(timestamp, err_str))
+            print(printout_str)
+        if self.log_file_path is not None:
+            with open(self.log_file_path + self.log_file_name, "a+") as log_file:
+                log_file.write("{}: {}\n".format(timestamp, printout_str.strip()))
 
     def end_chew_message(self):
         if not self.quiet:
@@ -70,3 +82,6 @@ class CmBark:
         timestamp = datetime.now()
         if not self.quiet:
             print("{}: {}".format(timestamp, printout_str), end=end, flush=flush)
+        if self.log_file_path is not None:
+            with open(self.log_file_path + self.log_file_name, "a+") as log_file:
+                log_file.write("{}: {}\n".format(timestamp, printout_str.strip()))

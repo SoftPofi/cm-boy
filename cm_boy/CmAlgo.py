@@ -12,7 +12,7 @@ class CmAlgo:
         if args is None:
             self.cm_bark = True
         else:
-            self.cm_bark = CmBark(args.quiet)
+            self.cm_bark = CmBark(args.quiet, args.outFile)
         self.list_of_cards_with_changed_prices = []
         self.args = args
 

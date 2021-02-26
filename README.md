@@ -120,9 +120,10 @@ It was **not** tested to do the following:
 It is assumed, that you are using the command line interface and python is callable with ```py``` (default in Windows and newer python versions, in Linux use ```python3``` instead or set an alias with ```alias py=python3```):  
 After you set up the python environment you can call it from the command line with ```py CmBoy.py```. You can modify the behavior with optional arguments, for a full list type in ```py CmBoy.py  --help```. Currently the following options are implemented:
 
-* ```--dryrun``` Give this optional argument to NOT update the cards. This can be useful if you first want to try out the program
-* ```--quiet``` Give this optional argument to disable all output to the command line. This could be useful if you want to use the CmBoy within another script and command line output interferes with that program
-* ```--forcePriceSet``` Give this optional argument to update prices regardless of current position. This usually results in more price updates per run and jumping of prices in between runs.
+* ```--dryrun``` or ```-d``` Give this optional argument to NOT update the cards. This can be useful if you first want to try out the program
+* ```--quiet``` or ```-q``` Give this optional argument to disable all output to the command line. This could be useful if you want to use the CmBoy within another script and command line output interferes with that program
+* ```--forcePriceSet``` or ```-f``` Give this optional argument to update prices regardless of current position. This usually results in more price updates per run and jumping of prices in between runs.
+* ```--outFile``` or ```-o``` Give this optional argument to save output to a log file. As argument give absolute path to folder where log files are stored. If empty argument but this flag is set, log is stored in CmBoy's folder. It is known that some special characters are in the log. They are special characters that change the color of characters on the command line.
 
 # 7. The Algorithm
 
