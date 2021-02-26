@@ -1,5 +1,7 @@
 confidential_config.json
+config.json
 .idea/
+*.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

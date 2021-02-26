@@ -17,6 +17,7 @@ class test_CmAlgo(TestCase):
         self.parser = argparse.ArgumentParser(description='This Boy handles all the cardmarket stuff, good boy!')
         self.setup_parser()
         args = self.parser.parse_args(["-d", "-q"])
+        args.outFile = None
         self.uut = CmAlgo(self.config, args)
 
     def test_card_in_range(self):
@@ -36,3 +37,4 @@ class test_CmAlgo(TestCase):
         self.parser.add_argument("-d", "--dryrun", action="store_true", help="Do NOT upload the cards with adjusted prices.")
         self.parser.add_argument("-q", "--quiet", action="store_true", help="Disable all output to the command line.")
         self.parser.add_argument("-f", "--forcePriceSet", action="store_true", help="Regardless of the current position, update the prices.")
+        self.parser.add_argument("-o", "--outFile", action="store_true", help="Regardless of the current position, update the prices.")

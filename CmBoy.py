@@ -33,7 +33,7 @@ class CmBoy:
         self.cm_filter = CmFilter(self.config)
         self.cm_session = CmSession(self.config["urls"]["base_url"])
         self.cm_algo = CmAlgo(self.config, self.args)
-        self.cm_bark = CmBark(self.args.quiet)
+        self.cm_bark = CmBark(self.args.quiet, self.args.outFile)
 
         self.card_inventory = {}
 
@@ -84,6 +84,7 @@ class CmBoy:
         self.parser.add_argument("-d", "--dryrun", action="store_true", help="Do NOT upload the cards with adjusted prices.")
         self.parser.add_argument("-q", "--quiet", action="store_true", help="Disable all output to the command line.")
         self.parser.add_argument("-f", "--forcePriceSet", action="store_true", help="Regardless of the current position, update the prices.")
+        self.parser.add_argument("-o", "--outFile", nargs='?', const='', help="Absolute path to folder where log files are stored. If empty, log is stored in CmBoy's folder.")
         self.args = self.parser.parse_args()
 
 

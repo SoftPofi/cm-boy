@@ -4,15 +4,13 @@ from cm_boy.CmBark import CmBark
 
 class CmAlgo:
 
-    def __init__(self, config, args=None):
+    def __init__(self, config, args):
         if config is not None:
             self.config = config
         else:
             raise ValueError("No config given")
-        if args is None:
-            self.cm_bark = True
-        else:
-            self.cm_bark = CmBark(args.quiet)
+
+        self.cm_bark = CmBark(args.quiet, args.outFile)
         self.list_of_cards_with_changed_prices = []
         self.args = args
 
