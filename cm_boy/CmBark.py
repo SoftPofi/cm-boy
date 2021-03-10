@@ -13,7 +13,7 @@ class CmBark:
         self.log_file_name = "{}_log.log".format(str(datetime.now().strftime("%Y_%m_%d_%H_%M_%S")))
         if self.log_file_path is not None:
             if log_file_path == "":
-                self.log_file_path = "./"
+                self.log_file_path = "./log/"
             else:
                 if not os.path.isdir(self.log_file_path):
                     raise ValueError("Directory '{}' given is not an existing directory".format(self.log_file_path))
