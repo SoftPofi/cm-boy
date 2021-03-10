@@ -26,8 +26,8 @@ class CmLeash:
                     err_file.write(exc)
 
     def generate_folder(self):
-        if not os.path.isdir("log"):
-            os.mkdir("log")
+        if not os.path.isdir("./log"):
+            os.mkdir("./log")
 
 if __name__ == "__main__":
     cm_leash = CmLeash()
