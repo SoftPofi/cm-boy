@@ -15,6 +15,7 @@ class CmLeash:
         pass
 
     def go_walkies(self):
+        self.generate_folder()
         try:
             cm_boy = CmBoy
             cm_boy.main(sys.argv[1:])
@@ -28,6 +29,7 @@ class CmLeash:
     def generate_folder(self):
         if not os.path.isdir("./log"):
             os.mkdir("./log")
+
 
 if __name__ == "__main__":
     cm_leash = CmLeash()
