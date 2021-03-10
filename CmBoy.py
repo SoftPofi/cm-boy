@@ -10,11 +10,11 @@ from cm_boy.CmFilter import CmFilter
 from cm_boy.CmSession import CmSession
 
 
-def main():
+def main(forward_args=None):
     """
-    get a good boy that first gets your account data, gets your stock processes each card and uploads the cards that have a new price.
+    a good boy that first gets your account data, gets your stock processes each card and uploads the cards that have a new price.
     """
-    good_cm_boy = CmBoy()
+    good_cm_boy = CmBoy(forward_args=forward_args)
     good_cm_boy.come()
     good_cm_boy.fetch()
     good_cm_boy.chew()
@@ -23,11 +23,11 @@ def main():
 
 class CmBoy:
 
-    def __init__(self):
+    def __init__(self, forward_args=None):
         with open("data/config.json", "r") as json_config:
             self.config = json.load(json_config)
         self.parser = argparse.ArgumentParser(description='This Boy handles all the cardmarket stuff, good boy!')
-        self._setup_parser()
+        self._setup_parser(forward_args=forward_args)
 
         self.cm_client = CmClient(self.config)
         self.cm_filter = CmFilter(self.config)
@@ -42,7 +42,7 @@ class CmBoy:
         if success:
             self.username = account_data["account"]["username"]
             self.sell_count = account_data["account"]["sellCount"]
-            self.cm_bark.come(self.username )
+            self.cm_bark.come(self.username)
             self.config["listing_static_filter"]["seller_country"] = account_data["account"]["country"]
         else:
             raise ValueError("Could not get account data! Reason: {}".format(reason))
@@ -80,12 +80,15 @@ class CmBoy:
         for card in self.cm_algo.list_of_cards_with_changed_prices:
             self.cm_bark.price_update_statistic(card)
 
-    def _setup_parser(self):
+    def _setup_parser(self, forward_args):
         self.parser.add_argument("-d", "--dryrun", action="store_true", help="Do NOT upload the cards with adjusted prices.")
         self.parser.add_argument("-q", "--quiet", action="store_true", help="Disable all output to the command line.")
         self.parser.add_argument("-f", "--forcePriceSet", action="store_true", help="Regardless of the current position, update the prices.")
         self.parser.add_argument("-o", "--outFile", nargs='?', const='', help="Absolute path to folder where log files are stored. If empty, log is stored in CmBoy's folder.")
-        self.args = self.parser.parse_args()
+        if forward_args is None:
+            self.args = self.parser.parse_args()
+        else:
+            self.args = self.parser.parse_args(forward_args)
 
 
 if __name__ == "__main__":

@@ -15,6 +15,9 @@
     - [7.1. Approach and reasoning](#71-approach-and-reasoning)
     - [7.2. How this algorithm works](#72-how-this-algorithm-works)
     - [7.3. Ignore specific listing](#73-ignore-specific-listing)
+- [Cron job and wrapper for CmBoy](#cron-job-and-wrapper-for-cmboy)
+    - [Cron job](#cron-job)
+    - [CmLeash](#cmleash)
 - [8. Disclaimer](#8-disclaimer)
 
 <!-- /TOC -->
@@ -160,6 +163,26 @@ This is useful if:
 * You have a listing not supported by cm-boy, so for example accessories, sealed product or anything but Magic: The Gathering single cards.
 * You don't want a certain card to be price adjusted by the cm-boy
 
+# Cron job and wrapper for CmBoy
+
+If you want to run the CmBoy scheduled on a linux computer or linux cloud, a cron job wrapper is provided with the ```cron_job.sh```. Additionally a wrapper for CmBoy is provided that extends the functionality of the CmBoy. It is a wrapper that can execute steps before CmBoy is executed and after it ran.
+
+## Cron job
+
+A cron job is a linux feature that allows scheduled execution of code. Therefore you must install and configure ```cron``` on your device. There are many tutorials on how to do that, for example [this](https://vitux.com/how-to-setup-a-cron-job-in-debian-10/). Also ```screen``` is used by the provided cron job script, so make sure it works on your machine. More on ```screen``` for example [here](https://linuxize.com/post/how-to-use-linux-screen/). To properly run also the system environment variable ```cm_base_dir``` must exist giving the absolute path to the git managed repository of CmBoy.
+
+The provided ```cron_job.sh``` will:
+* Kill ALL running screen sessions (make sure this doesn't interfere with other things you are doing)
+* Create the log folder if not present and delete old screen logs
+* Create a screen session which will
+  * Checkout main
+  * Pull main
+  * Start ```CmLeash.py``` with the options ```-f``` and ```-o```
+  * Log the screen output to ```log/screen.log```
+
+## CmLeash
+
+This is a wrapper for the CmBoy and will take the good boy on a walk on a leash. This is done to provide some functionality before you start CmBoy and after CmBoy is done. Currently the functionality is limited and only writes exceptions to a file. Future features will include sending the results to you via mail.
 
 # 8. Disclaimer
 
