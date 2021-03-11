@@ -1,6 +1,7 @@
 confidential_config.json
 config.json
 .idea/
+log/
 *.log
 
 # Byte-compiled / optimized / DLL files
