@@ -5,20 +5,23 @@
 
 - [1. cm-boy](#1-cm-boy)
 - [2. Introduction](#2-introduction)
-- [3. Technologies](#3-technologies)
-- [4. Setup](#4-setup)
-    - [4.1. API Access](#41-api-access)
-    - [4.2. Modify the algorithm](#42-modify-the-algorithm)
-- [5. Features of CmBoy](#5-features-of-cmboy)
-- [6. How to use CmBoy](#6-how-to-use-cmboy)
-- [7. The Algorithm](#7-the-algorithm)
-    - [7.1. Approach and reasoning](#71-approach-and-reasoning)
-    - [7.2. How this algorithm works](#72-how-this-algorithm-works)
-    - [7.3. Ignore specific listing](#73-ignore-specific-listing)
-- [Cron job and wrapper for CmBoy](#cron-job-and-wrapper-for-cmboy)
-    - [Cron job](#cron-job)
-    - [CmLeash](#cmleash)
-- [8. Disclaimer](#8-disclaimer)
+- [3. Cardmarket API](#3-cardmarket-api)
+    - [3.1. Limitations](#31-limitations)
+    - [3.2. Fair usage](#32-fair-usage)
+- [4. Technologies](#4-technologies)
+- [5. Setup](#5-setup)
+    - [5.1. API Access](#51-api-access)
+    - [5.2. Modify the algorithm](#52-modify-the-algorithm)
+- [6. Features of CmBoy](#6-features-of-cmboy)
+- [7. How to use CmBoy](#7-how-to-use-cmboy)
+- [8. The Algorithm](#8-the-algorithm)
+    - [8.1. Approach and reasoning](#81-approach-and-reasoning)
+    - [8.2. How this algorithm works](#82-how-this-algorithm-works)
+    - [8.3. Ignore specific listing](#83-ignore-specific-listing)
+- [9. Cron job and wrapper for CmBoy](#9-cron-job-and-wrapper-for-cmboy)
+    - [9.1. Cron job](#91-cron-job)
+    - [9.2. CmLeash](#92-cmleash)
+- [10. Disclaimer](#10-disclaimer)
 
 <!-- /TOC -->
 
@@ -31,7 +34,24 @@ This little boy will adjust the prices of your card stock at cardmarket.eu in an
  
 For example: I can specify, that I want my cards to be listed at the 10th place of the list of comparable offers, but I am fine with a range of 5 to 15. More on the algorithm and ways to adjust it later on.
 
-# 3. Technologies
+# 3. Cardmarket API
+
+---
+:warning:**NOTE**:warning:
+
+**<span style="color:red">The Cardmarket API was disabled by Cardmarket due to internal problems. CmBoy needs to interact with the website in order to work. So until they enable the API again, CmBoy is not working. [Statement by cardmarket.eu](https://www.cardmarket.com/en/Magic/News/Statement-On-Cardmarket-Outage).</span>**
+
+---
+
+## 3.1. Limitations
+
+For this application the amount of interactions with the website is limited to 5000 calls per 24 hours. For each Card the CmBoy interacts with the website as well as for each price set and a few other calls. If you have more than 5000 cards to manage, this tool is not for you, but you can contact cardmarket support maybe they can increase your accounts API calls. If you have just a few cards less than 5000 consider not using the -f option to limit the number of cards uploaded.
+
+## 3.2. Fair usage
+
+The API is used by a lot of other tools and the website already has problems maintaining it. CmBoy is very gentle with the API, nevertheless it is recommended to use CmBoy in "off hours" say deep at night where the traffic is low.
+
+# 4. Technologies
  
 The CmBoy is written in python (using v3.8, but compatible versions should be fine) and outside of the libraries included in a standard python installation it only uses the libraries stated in the requirements.txt:
 
@@ -40,9 +60,9 @@ The CmBoy is written in python (using v3.8, but compatible versions should be fi
  
 You should install them using pip3.
 
-# 4. Setup
+# 5. Setup
 
-## 4.1. API Access
+## 5.1. API Access
 
 * You must set up your account to have API access.
 * Go to https://www.cardmarket.com/en/Magic/Account/API and register your account for a dedicated app.
@@ -56,7 +76,7 @@ You should install them using pip3.
   * ```cm_access_secret```
 
 
-## 4.2. Modify the algorithm
+## 5.2. Modify the algorithm
 
 All data that determine the algorithm and CmBoys behavior is specified in the ```config.json``` in the folder ```data```.
 The section ```"urls"``` should only be changed if the API address ever changes.
@@ -102,7 +122,7 @@ The section ```algo_parameter``` changes the behavior of the algorithm.
       }
     },
 ```
-# 5. Features of CmBoy
+# 6. Features of CmBoy
 
 It can currently do the following:
 
@@ -118,7 +138,7 @@ It was **not** tested to do the following:
 
 * Handle other games than Magic: the Gathering, so it was not tested to adjust prices for other games (Yugioh, ...).
 
-# 6. How to use CmBoy
+# 7. How to use CmBoy
 
 It is assumed, that you are using the command line interface and python is callable with ```py``` (default in Windows and newer python versions, in Linux use ```python3``` instead or set an alias with ```alias py=python3```):  
 After you set up the python environment you can call it from the command line with ```py CmBoy.py```. You can modify the behavior with optional arguments, for a full list type in ```py CmBoy.py  --help```. Currently the following options are implemented:
@@ -128,17 +148,17 @@ After you set up the python environment you can call it from the command line wi
 * ```--forcePriceSet``` or ```-f``` Give this optional argument to update prices regardless of current position. This usually results in more price updates per run and jumping of prices in between runs.
 * ```--outFile``` or ```-o``` Give this optional argument to save output to a log file. As argument give absolute path to folder where log files are stored. If empty argument but this flag is set, log is stored in CmBoy's folder. It is known that some special characters are in the log. They are special characters that change the color of characters on the command line.
 
-# 7. The Algorithm
+# 8. The Algorithm
 
 Currently there is just one algorithm available and it's fairly basic, but has been found to work well.
 
-## 7.1. Approach and reasoning
+## 8.1. Approach and reasoning
 
 The market for cards is always changing, cards go up and down and you don't want to miss an upwards trend, but also don't want to have your cards rot at a too high price point. So this algorithm will follow the market. Cardmarket.eu provides an average and trend prices, but those sometimes tend to be not good (at least for me and my experience).
 
 So this algorithm allows you to place your offer within a certain region of the sorted listing for a specific card.
 
-## 7.2. How this algorithm works
+## 8.2. How this algorithm works
 
 This Flow chart shows how it works:
 
@@ -155,7 +175,7 @@ If you prefer words and some info left from above graph:
 
 If the card price was adjusted, the card is added to the list of cards that will be uploaded (this is not done if ```--dryrun``` is specified).
 
-## 7.3. Ignore specific listing
+## 8.3. Ignore specific listing
 
 To ignore a specific listing add ```|#00``` anywhere in the listing's comment. It doesn't matter if it's in the beginning or the end or somewhere in the middle of the sentence of the comment. So for example a comment that makes the listing be ignored by cm-boy is: ```Card has a little scratch, see picture. |#00```
 
@@ -163,11 +183,11 @@ This is useful if:
 * You have a listing not supported by cm-boy, so for example accessories, sealed product or anything but Magic: The Gathering single cards.
 * You don't want a certain card to be price adjusted by the cm-boy
 
-# Cron job and wrapper for CmBoy
+# 9. Cron job and wrapper for CmBoy
 
 If you want to run the CmBoy scheduled on a linux computer or linux cloud, a cron job wrapper is provided with the ```cron_job.sh```. Additionally a wrapper for CmBoy is provided that extends the functionality of the CmBoy. It is a wrapper that can execute steps before CmBoy is executed and after it ran.
 
-## Cron job
+## 9.1. Cron job
 
 A cron job is a linux feature that allows scheduled execution of code. Therefore you must install and configure ```cron``` on your device. There are many tutorials on how to do that, for example [this](https://vitux.com/how-to-setup-a-cron-job-in-debian-10/). Also ```screen``` is used by the provided cron job script, so make sure it works on your machine. More on ```screen``` for example [here](https://linuxize.com/post/how-to-use-linux-screen/). To properly run also the system environment variable ```cm_base_dir``` must exist giving the absolute path to the git managed repository of CmBoy.
 
@@ -180,11 +200,11 @@ The provided ```cron_job.sh``` will:
   * Start ```CmLeash.py``` with the options ```-f``` and ```-o```
   * Log the screen output to ```log/screen.log```
 
-## CmLeash
+## 9.2. CmLeash
 
 This is a wrapper for the CmBoy and will take the good boy on a walk on a leash. This is done to provide some functionality before you start CmBoy and after CmBoy is done. Currently the functionality is limited and only writes exceptions to a file. Future features will include sending the results to you via mail.
 
-# 8. Disclaimer
+# 10. Disclaimer
 
 This program is published under the specified license and "as is" in the hope it is useful for others. The following can't be claimed:
 
