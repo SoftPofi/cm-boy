@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import traceback
 import sys
 from datetime import datetime
 
@@ -23,8 +24,8 @@ class CmLeash:
             self.generate_folder()
             file_log_name = "{}_error.log".format(str(datetime.now().strftime("%Y_%m_%d_%H_%M_%S")))
             if __name__ == '__main__':
-                with open("./log/{}".format(file_log_name)) as err_file:
-                    err_file.write(exc)
+                with open("./log/{}".format(file_log_name), "w") as err_file:
+                    traceback.print_exc(file=err_file)
 
     def generate_folder(self):
         if not os.path.isdir("./log"):
