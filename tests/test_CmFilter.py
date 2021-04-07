@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json
+
 from unittest import TestCase
 
 from cm_boy.CmFilter import CmFilter
